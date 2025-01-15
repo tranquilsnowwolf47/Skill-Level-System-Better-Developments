@@ -427,51 +427,69 @@ def to_MAX(TO_MAX_EXP):
 
 # Default value 
 validLetterChoice = False
+validSkillCategoryChoice = False
 
 letterLoop = True # Value for the loop
 while letterLoop:
-    letterChoice = input("Please enter the letter of the next value or enter MAX for max: ")
+    letterChoice = str(input("Please enter the letter of the next value or enter MAX for max: "))
     Letters = ["E+","D","D+","C","C+","B","B+","A","A+","S","S+","MAX"]
-        
-    if letterChoice in Letters:
+
+    skillCategoryChoice = str(input("Please enter the skill category name: "))
+    SkillCategories = ["Sword","Lance","Axe","Bow","Brawl","Reason","Faith","Authority","Hvy Armor","Riding","Flying"]
+    
+
+    if letterChoice in Letters and skillCategoryChoice in SkillCategories:
         validLetterChoice = True
+        validSkillCategoryChoice = True
         #print(f"validLetterChoice: {validLetterChoice}")    # Debugging
         if validLetterChoice == True:
             if letterChoice == "E+":
                 to_E_Plus(40)
-                print(f"New current letter: {letterChoice}")
+                print(f"Skill Category: {skillCategoryChoice}")
+                print(f"New current letter: {letterChoice}")                
             elif letterChoice == "D":
                 to_D(60)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "D+":
                 to_D_Plus(80)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "C":
                 to_C(120)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "C+":
                 to_C_Plus(160)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "B":
                 to_B(220)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "B+":
                 to_B_Plus(280)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "A":
                 to_A(360)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "A+":
                 to_A_Plus(440)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "S":
                 to_S(540)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "S+":
                 to_S_Plus(760)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
             elif letterChoice == "MAX":
                 to_MAX(900)
+                print(f"Skill Category: {skillCategoryChoice}")
                 print(f"New current letter: {letterChoice}")
                 # Reprompt if the user wants to do the loop again        
                 letterLoopPrompt = str(input("Would you like to do another? Enter y for yes: "))
