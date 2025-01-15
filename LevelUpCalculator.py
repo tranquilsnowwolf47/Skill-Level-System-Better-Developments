@@ -26,7 +26,7 @@ def to_E_Plus(TO_E_PLUS_EXP):
         remainder = EXPInput - TO_E_PLUS_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -60,7 +60,7 @@ def to_D(TO_D_EXP):
         remainder = EXPInput - TO_D_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -94,7 +94,7 @@ def to_D_Plus(TO_D_PLUS_EXP):
         remainder = EXPInput - TO_D_PLUS_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -127,7 +127,7 @@ def to_C(TO_C_EXP):
         remainder = EXPInput - TO_C_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -161,7 +161,7 @@ def to_C_Plus(TO_C_PLUS_EXP):
         remainder = EXPInput - TO_C_PLUS_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -195,7 +195,7 @@ def to_B(TO_B_EXP):
         remainder = EXPInput - TO_B_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -229,7 +229,7 @@ def to_B_Plus(TO_B_PLUS_EXP):
         remainder = EXPInput - TO_B_PLUS_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -262,7 +262,7 @@ def to_A(TO_A_EXP):
         remainder = EXPInput - TO_A_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -296,7 +296,7 @@ def to_A_Plus(TO_A_PLUS_EXP):
         remainder = EXPInput - TO_A_PLUS_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -330,7 +330,7 @@ def to_S(TO_S_EXP):
         remainder = EXPInput - TO_S_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -364,7 +364,7 @@ def to_S_Plus(TO_S_PLUS_EXP):
         remainder = EXPInput - TO_S_PLUS_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
@@ -398,7 +398,7 @@ def to_MAX(TO_MAX_EXP):
         remainder = EXPInput - TO_MAX_EXP
         print()
         print("You leveled up!")
-        print(f"hasRemainder: {hasRemainder}") # Debugging
+        #print(f"hasRemainder: {hasRemainder}") # Debugging
         print(f"Remainder: {remainder} EXP")
     else:
         levelUp = False
