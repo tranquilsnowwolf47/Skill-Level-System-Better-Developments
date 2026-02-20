@@ -1,68 +1,68 @@
 class AxeSkills:
-    S_plus_skills = (System Analyst 
-Project Manager 
-Master Programmer 
-Database Scientist 
-Security Essentials + 5  
-Cyber Security +5 
-C Master 
-C# Master 
-C++ Master 
-C +5
-C++ +5
-C# +5
-Troubleshooting + 5
-Loops + 5
-Arrays + 5
-Functions + 5
-Data handling + 5
-OOP + 5
-Debugging + 5
-Error Handling + 5
+    S_plus_skills = ("System Analyst",
+"Project Manager 
+"Master Programmer"
+"Database Scientist"
+"Security Essentials + 5"
+"Cyber Security +5"
+"C Master"
+"C# Master"
+"C++ Master"
+"C +5"
+"C++ +5"
+"C# +5"
+"Troubleshooting + 5"
+"Loops + 5"
+"Arrays + 5"
+"Functions + 5"
+"Data handling + 5"
+"OOP + 5"
+"Debugging + 5"
+"Error Handling + 5"
 )
     S_skills = (C Mastery Lvl. 3 
-C# Mastery Lvl. 3  
-C++ Mastery Lvl. 3 
-Python +5
-Java +5
-JavaScript +5
-Loops + 4
-Arrays + 4
-Functions + 4
-Data handling + 4
-OOP + 4
-Debugging + 4
-Input Validation + 5
-Decision Structures + 5
-Error Handling + 4
-Web Development + 5
+C# Mastery Lvl. 3"
+C++ Mastery Lvl. 3"
+Python +5"
+Java +5"
+JavaScript +5"
+Loops + 4"
+Arrays + 4"
+Functions + 4"
+Data handling + 4"
+OOP + 4"
+Debugging + 4"
+Input Validation + 5"
+Decision Structures + 5"
+Error Handling + 4"
+Web Development + 5"
 )
     A_plus_skills = (Python Master 
-Java Master 
-JavaScript Master 
-Database Manager  
-Programming + 5 
-Programming Logic + 5 
-Database + 5  
-Cyber Security +4  
-Python Mastery Lvl. 3 
-Java Mastery Lvl. 3 
-JavaScript Mastery Lvl. 3 
-Python +4
-Java +4
-C++ +4
-JavaScript +4
-C# +4
-C +4
-Arrays + 3
-Functions + 3
-Variables + 5
-Output + 5
-Input + 5
-Decision Structures + 4
-Web Development + 4
-Fix-it-Felix 
-Axe Prowess Lvl. 5 
+Java Master"
+JavaScript Master"
+Database Manager"
+Programming + 5"
+Programming Logic + 5"
+Database + 5"
+Cyber Security +4"
+Python Mastery Lvl. 3"
+Java Mastery Lvl. 3"
+JavaScript Mastery Lvl. 3"
+Python +4"
+Java +4"
+C++ +4"
+JavaScript +4"
+C# +4"
+C +4"
+Arrays + 3"
+Functions + 3"
+Variables + 5"
+Output + 5"
+Input + 5"
+Decision Structures + 4"
+Web Development + 4"
+Fix-it-Felix"
+Axe Prowess Lvl. 5"
 )
     A_skills = (Programming + 4 
 Programming Logic + 4
