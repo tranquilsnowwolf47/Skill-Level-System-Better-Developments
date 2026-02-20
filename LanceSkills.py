@@ -54,9 +54,9 @@ class LanceSkills:
 "Body Proportions + 1"
 )
     D_plus_skills = ("Apprentice Lyricist"
-Poses + 1
-)
-    D_skills = (Lance Prowess Lvl. 2 
-Art + 1
-)
-    E_plus_skills = (Lance Prowess Lvl. 1)
+Poses + 1)
+
+    D_skills = ("Lance Prowess Lvl. 2",
+"Art + 1")
+
+    E_plus_skills = ("Lance Prowess Lvl. 1")
