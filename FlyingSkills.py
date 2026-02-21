@@ -1,12 +1,12 @@
 class FlyingSkills:
     S_plus_skills = (
-"Cleaning Freak",
-"Physical Organization + 5",
-"Digital Organization + 5",
-"Dish Washing + 5"
-"Cleanliness + 5"
-
+    "Cleaning Freak",
+    "Physical Organization + 5",
+    "Digital Organization + 5",
+    "Dish Washing + 5"
+    "Cleanliness + 5"
 )
+    
     S_skills = (
     "Always Organized",
     "Clean Mind",
@@ -25,7 +25,7 @@ class FlyingSkills:
     "Sweeping + 4"
     )
     
-    "A_skills = (
+    A_skills = (
     "Cleanliness + 3",
     "Physical Organization + 3",
     "Digital Organization + 3"
