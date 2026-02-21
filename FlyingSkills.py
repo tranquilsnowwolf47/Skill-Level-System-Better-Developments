@@ -40,15 +40,18 @@ class FlyingSkills:
     
     C_plus_skills = ("Cleanliness + 2")
 
-    C_skills = ("Sweeping + 2",
+    C_skills = (
+    "Sweeping + 2",
     "Dish Washing + 2"
     )
 
-    D_plus_skills = ("Physical Organization + 1",
+    D_plus_skills = (
+    "Physical Organization + 1",
     "Digital Organization + 1"
     )
 
-    D_skills = ("Dish Washing + 1",
+    D_skills = (
+    "Dish Washing + 1",
     "Cleanliness + 1"
     )
 
