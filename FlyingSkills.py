@@ -1,9 +1,14 @@
+# Filename: FlyingSkills.py
+# Date: 2/21/26
+# Author: Aoi | shadowsnowwolf 
+# Flying (Organizational) skill list
+
 class FlyingSkills:
     S_plus_skills = (
     "Cleaning Freak",
     "Physical Organization + 5",
     "Digital Organization + 5",
-    "Dish Washing + 5"
+    "Dish Washing + 5",
     "Cleanliness + 5"
 )
     
