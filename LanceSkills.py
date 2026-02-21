@@ -1,3 +1,8 @@
+# Filename: LanceSkills.py
+# Date: 2/21/26
+# Author: Aoi | shadowsnowwolf 
+# Lance (The Arts) skill list
+
 class LanceSkills:
     S_plus_skills = (
 "Pro Artist",
