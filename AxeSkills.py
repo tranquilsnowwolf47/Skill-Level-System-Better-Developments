@@ -1,3 +1,8 @@
+# Filename: AxeSkills.py
+# Date: 2/21/26
+# Author: Aoi | shadowsnowwolf 
+# Axe (Technical and Technological) skill list
+
 class AxeSkills:
     S_plus_skills = (
 "System Analyst",
