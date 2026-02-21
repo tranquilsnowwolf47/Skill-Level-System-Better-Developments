@@ -1,6 +1,6 @@
 class FlyingSkills:
     S_plus_skills = (
-        "Cleaning Freak",
+"Cleaning Freak",
 "Physical Organization + 5",
 "Digital Organization + 5",
 "Dish Washing + 5"
