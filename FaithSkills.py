@@ -84,43 +84,64 @@ class FaithSkills:
 # Displays the fulll list of E+ skills
 def display_e_plus_skills():
     print("E+:")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of D skills
 def display_d_skills():
     print("D")
+    print(FaithSkills.D_skills)
 
 # Displays the fulll list of D+ skills
 def display_d_plus_skills():
     print("D+")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of C skills
 def display_c_skills():
     print("C")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of C+ skills
 def display_c_plus_skills():
     print("C+")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of B skills
 def display_b_skills():
     print("B")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of B+ skills
 def display_b_plus_skills():
     print("B+")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of A skills
 def display_a_skills():
     print("A")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of A+ skills
 def display_a_plus_skills():
     print("A+")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of S skills
 def display_s_skills():
     print("S")
+    for skill in FaithSkills.:
+        print(skill)
 
 # Displays the fulll list of S+ skills
 def display_s_plus_skills():
     print("S+")
+    for skill in FaithSkills.:
+        print(skill)
