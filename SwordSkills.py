@@ -95,68 +95,68 @@ class SwordSkills:
 )
     E_plus_skills = ("Grocery Shopping + 1")
 
-# Displays the fulll list of X skills
+# Displays the full list of X skills
 def display_e_plus_skills():
     print("E+:")
     print(SwordSkills.E_plus_skills)
 
-# Displays the fulll list of D skills
+# Displays the full list of D skills
 def display_d_skills():
     print("D")
-    for skill in SwordSkills.d_skills:
+    for skill in SwordSkills.D_skills:
         print(skill)
 
-# Displays the fulll list of D+ skills
+# Displays the full list of D+ skills
 def display_d_plus_skills():
     print("D+")
-    for skill in SwordSkills.d_plus_skills:
+    for skill in SwordSkills.D_plus_skills:
         print(skill)
 
-# Displays the fulll list of C skills
+# Displays the full list of C skills
 def display_c_skills():
     print("C")
-    for skill in SwordSkills.c_skills:
+    for skill in SwordSkills.C_skills:
         print(skill)
 
-# Displays the fulll list of C+ skills
+# Displays the full list of C+ skills
 def display_c_plus_skills():
     print("C+")
-    for skill in SwordSkills.c_plus_skills:
+    for skill in SwordSkills.C_plus_skills:
         print(skill)
 
-# Displays the fulll list of B skills
+# Displays the full list of B skills
 def display_b_skills():
     print("B")
-    for skill in SwordSkills.b_skills:
+    for skill in SwordSkills.B_skills:
         print(skill)
 
-# Displays the fulll list of B+ skills
+# Displays the full list of B+ skills
 def display_b_plus_skills():
     print("B+")
-    for skill in SwordSkills.b_skills:
+    for skill in SwordSkills.B_skills:
         print(skill)
 
-# Displays the fulll list of A skills
+# Displays the full list of A skills
 def display_a_skills():
     print("A")
-    for skill in SwordSkills.a_skills:
+    for skill in SwordSkills.A_skills:
         print(skill)
 
-# Displays the fulll list of A+ skills
+# Displays the full list of A+ skills
 def display_a_plus_skills():
     print("A+")
-    for skill in SwordSkills.a_plus_skills:
+    for skill in SwordSkills.A_plus_skills:
         print(skill)
 
-# Displays the fulll list of S skills
+# Displays the full list of S skills
 def display_s_skills():
     print("S")
-    for skill in SwordSkills.s_skills:
+    for skill in SwordSkills.S_skills:
         print(skill)
 
-# Displays the fulll list of S+ skills
+# Displays the full list of S+ skills
 def display_s_plus_skills():
     print("S+")
-    for skill in SwordSkills.s_plus_skills:
+    for skill in SwordSkills.S_plus_skills:
         print(skill)
 
