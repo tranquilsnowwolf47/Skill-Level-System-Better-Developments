@@ -76,66 +76,66 @@ class LanceSkills:
 
     E_plus_skills = ("Lance Prowess Lvl. 1")
 
-# Displays the fulll list of E+ skills
+# Displays the full list of E+ skills
 def display_e_plus_skills():
     print("E+:")
     print(LanceSkills.E_plus_skills)
 
-# Displays the fulll list of D skills
+# Displays the full list of D skills
 def display_d_skills():
     print("D")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of D+ skills
+# Displays the full list of D+ skills
 def display_d_plus_skills():
     print("D+")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of C skills
+# Displays the full list of C skills
 def display_c_skills():
     print("C")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of C+ skills
+# Displays the full list of C+ skills
 def display_c_plus_skills():
     print("C+")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of B skills
+# Displays the full list of B skills
 def display_b_skills():
     print("B")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of B+ skills
+# Displays the full list of B+ skills
 def display_b_plus_skills():
     print("B+")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of A skills
+# Displays the full list of A skills
 def display_a_skills():
     print("A")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of A+ skills
+# Displays the full list of A+ skills
 def display_a_plus_skills():
     print("A+")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of S skills
+# Displays the full list of S skills
 def display_s_skills():
     print("S")
     for skill in LanceSkills.:
         print(skill)
 
-# Displays the fulll list of S+ skills
+# Displays the full list of S+ skills
 def display_s_plus_skills():
     print("S+")
     for skill in LanceSkills.:
