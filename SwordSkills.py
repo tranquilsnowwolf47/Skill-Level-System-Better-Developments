@@ -103,40 +103,60 @@ def display_e_plus_skills():
 # Displays the fulll list of D skills
 def display_d_skills():
     print("D")
+    for skill in SwordSkills.d_skills:
+        print(skill)
 
 # Displays the fulll list of D+ skills
 def display_d_plus_skills():
     print("D+")
+    for skill in SwordSkills.d_plus_skills:
+        print(skill)
 
 # Displays the fulll list of C skills
 def display_c_skills():
     print("C")
+    for skill in SwordSkills.c_skills:
+        print(skill)
 
 # Displays the fulll list of C+ skills
 def display_c_plus_skills():
     print("C+")
+    for skill in SwordSkills.c_plus_skills:
+        print(skill)
 
 # Displays the fulll list of B skills
 def display_b_skills():
     print("B")
+    for skill in SwordSkills.b_skills:
+        print(skill)
 
 # Displays the fulll list of B+ skills
 def display_b_plus_skills():
     print("B+")
+    for skill in SwordSkills.b_skills:
+        print(skill)
 
 # Displays the fulll list of A skills
 def display_a_skills():
     print("A")
+    for skill in SwordSkills.a_skills:
+        print(skill)
 
 # Displays the fulll list of A+ skills
 def display_a_plus_skills():
     print("A+")
+    for skill in SwordSkills.a_plus_skills:
+        print(skill)
 
 # Displays the fulll list of S skills
 def display_s_skills():
     print("S")
+    for skill in SwordSkills.s_skills:
+        print(skill)
 
 # Displays the fulll list of S+ skills
 def display_s_plus_skills():
     print("S+")
+    for skill in SwordSkills.s_plus_skills:
+        print(skill)
 
