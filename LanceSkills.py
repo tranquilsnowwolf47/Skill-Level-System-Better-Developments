@@ -79,6 +79,7 @@ class LanceSkills:
 # Displays the fulll list of E+ skills
 def display_e_plus_skills():
     print("E+:")
+    print(LanceSkills.e_plus_skills)
 
 # Displays the fulll list of D skills
 def display_d_skills():
