@@ -247,65 +247,65 @@ class BrawlSkills:
 # Displays the full list of E+ skills
 def display_e_plus_skills():
     print("E+:")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
 def display_d_skills():
     print("D")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.D_skills:
         print(skill)
 
 # Displays the full list of D+ skills
 def display_d_plus_skills():
     print("D+")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
 def display_c_skills():
     print("C")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
 def display_c_plus_skills():
     print("C+")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
 def display_b_skills():
     print("B")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
 def display_b_plus_skills():
     print("B+")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
 def display_a_skills():
     print("A")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
 def display_a_plus_skills():
     print("A+")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
 def display_s_skills():
     print("S")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
 def display_s_plus_skills():
     print("S+")
-    for skill in BrawlSkills.:
+    for skill in BrawlSkills.S_plus_skills:
         print(skill)
