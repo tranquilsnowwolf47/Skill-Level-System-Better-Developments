@@ -207,65 +207,65 @@ class AxeSkills:
 # Displays the full list of E+ skills
 def display_e_plus_skills():
     print("E+:")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
 def display_d_skills():
     print("D")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.D_skills:
         print(skill)
 
 # Displays the full list of D+ skills
 def display_d_plus_skills():
     print("D+")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
 def display_c_skills():
     print("C")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
 def display_c_plus_skills():
     print("C+")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
 def display_b_skills():
     print("B")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
 def display_b_plus_skills():
     print("B+")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
 def display_a_skills():
     print("A")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
 def display_a_plus_skills():
     print("A+")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
 def display_s_skills():
     print("S")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
 def display_s_plus_skills():
     print("S+")
-    for skill in AxeSkills.:
+    for skill in AxeSkills.S_plus_skills:
         print(skill)
