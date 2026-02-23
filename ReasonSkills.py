@@ -113,7 +113,7 @@ class ReasonSkills:
 # Displays the full list of E+ skills
 def display_e_plus_skills():
     print("E+:")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
@@ -124,53 +124,53 @@ def display_d_skills():
 # Displays the full list of D+ skills
 def display_d_plus_skills():
     print("D+")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
 def display_c_skills():
     print("C")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
 def display_c_plus_skills():
     print("C+")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
 def display_b_skills():
     print("B")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
 def display_b_plus_skills():
     print("B+")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
 def display_a_skills():
     print("A")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
 def display_a_plus_skills():
     print("A+")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
 def display_s_skills():
     print("S")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
 def display_s_plus_skills():
     print("S+")
-    for skill in ReasonSkills.:
+    for skill in ReasonSkills.S_plus_skills:
         print(skill)
