@@ -1,212 +1,271 @@
-# Filename: AuthoritySkills.py
+# Filename: AxeSkills.py
 # Date: 2/21/26
-# Author: Aoi | shadowsnowwolf
-# Authority (Charisma and Leadership) skill list
+# Author: Aoi | shadowsnowwolf 
+# Axe (Technical and Technological) skill list
 
-class AuthoritySkills:
+class AxeSkills:
     S_plus_skills = (
-"Model Leader",
-"Giga Chad",
-"Pro Looksmaxer",
-"Confidence + 5",
-"Assertiveness + 5",
-"Networking + 5",
-"Moisturizing + 5",
-"Face washing + 5",
-"Sunscreen Use + 5",
-"Masculinity + 5",
-"Cold Approach + 5",
-"Self-promotion + 5",
-"Marketing + 5",
-"Boundary Enforcement + 5",
-"Content Creation + 5"
-)
+"System Analyst",
+"Project Manager",
+"Master Programmer",
+"Database Scientist",
+"Security Essentials + 5",
+"Cyber Security + 5",
+"C Master",
+"C# Master",
+"C++ Master",
+"C + 5",
+"C++ + 5",
+"C# + 5",
+"Troubleshooting + 5",
+"Loops + 5",
+"Arrays + 5",
+"Functions + 5",
+"Data handling + 5",
+"OOP + 5",
+"Debugging + 5",
+"Error Handling + 5")
     
     S_skills = (
-"Officer's Intuition",
-"Instruct ++",
-"Gentleman Thief",
-"Ted Talker",
-"Communication + 5",
-"Networking + 4",
-"Assertiveness + 4",
-"Confidence + 4",
-"Face Washing + 4",
-"Looksmaxing Lvl 3",
-"Self-Haircut + 5",
-"Masculinity + 4",
-"Cold Approach + 4",
-"Self-promotion + 4",
-"Marketing + 4",
-"Boundary Enforcement + 4",
-"Content Creation + 4"
-)
+"C Mastery Lvl. 3",
+"C# Mastery Lvl. 3",
+"C++ Mastery Lvl. 3",
+"Python + 5",
+"Java + 5",
+"JavaScript + 5",
+"Loops + 4",
+"Arrays + 4",
+"Functions + 4",
+"Data handling + 4",
+"OOP + 4",
+"Debugging + 4",
+"Input Validation + 5",
+"Decision Structures + 5",
+"Error Handling + 4",
+"Web Development + 5")
     
     A_plus_skills = (
-"Special Tactics",
-"Charismatic",
-"Leadership + 3",
-"Charm + 15",
-"Fulfilling Bonder + 3",
-"Confidence + 3",
-"Communication + 4",
-"Networking + 3",
-"Face washing + 3",
-"Sunscreen Use + 4",
-"Fashion Lv 3",
-"Self-Haircut + 4",
-"Boundary Enforcement + 3",
-"Authority Prowess Lvl. 5"
-)
-    
+"Python Master" 
+"Java Master",
+"JavaScript Master",
+"Database Manager",
+"Programming + 5",
+"Programming Logic + 5",
+"Database + 5",
+"Cyber Security + 4",
+"Python Mastery Lvl. 3",
+"Java Mastery Lvl. 3",
+"JavaScript Mastery Lvl. 3",
+"Python + 4",
+"Java + 4",
+"C++ + 4",
+"JavaScript +4",
+"C# + 4",
+"C + 4",
+"Arrays + 3",
+"Functions + 3",
+"Variables + 5",
+"Output + 5",
+"Input + 5",
+"Decision Structures + 4",
+"Web Development + 4",
+"Fix-it-Felix",
+"Axe Prowess Lvl. 5")
+
     A_skills = (
-"Instruct + ",
-"Lecture Potential Lv. 3",
-"Public Speaker + 3",
-"Initiative + 3",
-"Speech + 3",
-"Moisturizing + 4",
-"Masculinity + 3",
-"Cold Approach + 3",
-"Content Creation + 3"
-)
+"Programming + 4",
+"Programming Logic + 4",
+"Database + 4",
+"Security Essentials + 4",
+"Cyber Security + 3",
+"Python Mastery Lvl. 2",
+"Java Mastery Lvl. 2",
+"C Mastery Lvl. 2",
+"C# Mastery Lvl. 2",
+"C++ Mastery Lvl. 2",
+"JavaScript Mastery Lvl. 2",
+"C++ + 3",
+"Python + 3",
+"Java + 3",
+"JavaScript +3",
+"C# + 3",
+"C + 3",
+"Troubleshooting + 4",
+"Loops + 3",
+"Data handling + 3",
+"OOP + 3",
+"Variables + 4",
+"Input + 4",
+"Debugging + 3",
+"Input Validation + 4",
+"Error Handling + 3",
+"Handiman Lvl 3")
     
     B_plus_skills = (
-"Instruct",
-"Charm + 10",
-"Lecture Potential Lv. 2",
-"Speech + 2",
-"Leadership + 2",
-"Face Washing + 2",
-"Looksmaxing Lvl 2",
-"Self-Haircut + 3",
-"Cold Approach + 2",
-"Self-promotion + 3",
-"Marketing + 3",
-"Authority Prowess Lvl. 4" 
-)
+"Programming + 3",  
+"Programming Logic + 3", 
+"Database + 3", 
+"Security Essentials + 3", 
+"Cyber Security + 2",
+"Python Mastery Lvl. 1", 
+"Java Mastery Lvl. 1", 
+"C Mastery Lvl. 1" ,
+"C# Mastery Lvl. 1" ,
+"C++ Mastery Lvl. 1",
+"JavaScript Mastery Lvl. 1", 
+"Python + 2",
+"Java + 2",
+"C++ + 2",
+"Camel Case + 3",
+"Snake Case + 3",
+"Pascal Case + 3",
+"Troubleshooting + 3",
+"OOP + 2",
+"Output + 4",
+"Input Validation + 3",
+"Web Development + 3",
+"Axe Prowess Lvl. 4")
     
     B_skills = (
-"Initiative + 2",
-"Public Speaker + 2",
-"Fulfilling Bonder + 2",
-"Fashion Lvl 2",
-"Masculinity + 2",
-"Boundary Enforcement + 2",
-"Fragrance Application + 3 "
-)
+"Encrypter | Requirement: Learn about encryption and how to encrypt passwords",
+"Programming + 2" 
+"Programming Logic + 2" 
+"Database + 2" 
+"Security Essentials + 2" 
+"Cyber Security + 1" 
+"C# +2"
+"C +2"
+"JavaScript +2"
+"Pascal Case + 2"
+"Troubleshooting + 2" 
+"Arrays + 2"
+"Functions + 2"
+"OOP + 1"
+"Decision Structures + 3")
     
     C_plus_skills = (
-"Lecture Potential Lv. 1",
-"Initiative + 1",
-"Moisturizing + 3",
-"Self-Haircut + 2",
-"Boundary Enforcement + 1",
-"Authority Prowess Lvl. 3",
-"Content Creation + 2"
-)
+"Database + 1" 
+"Security Essentials + 1" 
+"JavaScript + 1"
+"C++ + 1 "
+"C# + 1"
+"Snake Case + 2"
+"Loops + 2"
+"Functions + 1"
+"Data handling + 2"
+"Variables + 3"
+"Input + 3"
+"Decision Structures + 2"
+"Axe Prowess Lvl. 3")
     
     C_skills = (
-"Speech + 1",
-"Fulfilling Bonder + 1",
-"Sunscreen Use + 3",
-"Masculinity + 1",
-"Self-promotion + 2",
-"Marketing + 2",
-"Fragrance Application + 2"
-)
+"Apprentice Programmer", 
+"Database Beginner", 
+"Handiman Lvl 2", 
+"Python + 1",
+"Java + 1",
+"Camel Case + 2",
+"Troubleshooting + 1", 
+"Arrays + 1",
+"Output + 3",
+"Debugging + 2",
+"Input Validation + 2",
+"Error Handling + 2",
+"Web Development + 2")
     
     D_plus_skills = (
-"Charm + 5",
-"Moisturizing + 2",
-"Looksmaxing Lvl 1",
-"Cold Approach + 1",
-"Authority Prowess Lvl. 2",
-"Content Creation + 1"
+"Programming Student", 
+"Programming Logic + 1", 
+"Programming + 1",  
+"C + 1",
+"Pascal Case + 1",
+"Data handling + 1",
+"Variables + 2",
+"Output + 2",
+"Debugging + 1",
+"Input Validation + 1",
+"Error Handling + 1"
 )
-    
     D_skills = (
-"Leadership + 1",
-"Public Speaker + 1",
-"Confidence + 1",
-"Sunscreen Use + 2",
-"Fashion Lvl 1",
-"Self-Haircut + 1",
-"Self-promotion + 1",
-"Marketing + 1",
-"Fragrance Application + 1"
+"Snake Case + 1",
+"Handiman Lvl 1",  
+"Loops + 1",
+"Input + 2",
+"Decision Structures + 1",
+"Axe Prowess Lvl. 2" 
 )
     
     E_plus_skills = (
-"Communication + 1",
-"Moisturizing + 1",
-"Face washing + 1",
-"Sunscreen Use + 1",
-"Authority Prowess Lvl. 1"
+"Camel Case + 1",
+"Variables + 1",
+"Output + 1",
+"Input + 1",
+"Web Development + 1",
+"Axe Prowess Lvl. 1"
 )
     
 # Displays the full list of E+ skills
 def display_e_plus_skills():
     print("E+:")
-    for skill in AuthoritySkills.E_plus_skills:
+    for skill in AxeSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
 def display_d_skills():
     print("D")
-    for skill in AuthoritySkills.D_skills:
+    for skill in AxeSkills.D_skills:
         print(skill)
 
 # Displays the full list of D+ skills
 def display_d_plus_skills():
     print("D+")
-    for skill in AuthoritySkills.D_plus_skills:
+    for skill in AxeSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
 def display_c_skills():
     print("C")
-    for skill in AuthoritySkills.C_skills:
+    for skill in AxeSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
 def display_c_plus_skills():
     print("C+")
-    for skill in AuthoritySkills.C_plus_skills:
+    for skill in AxeSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
 def display_b_skills():
     print("B")
-    for skill in AuthoritySkills.B_skills:
+    for skill in AxeSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
 def display_b_plus_skills():
     print("B+")
-    for skill in AuthoritySkills.B_plus_skills:
+    for skill in AxeSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
 def display_a_skills():
     print("A")
-    for skill in AuthoritySkills.A_skills:
+    for skill in AxeSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
 def display_a_plus_skills():
     print("A+")
-    for skill in AuthoritySkills.A_plus_skills:
+    for skill in AxeSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
 def display_s_skills():
     print("S")
-    for skill in AuthoritySkills.S_skills:
+    for skill in AxeSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
 def display_s_plus_skills():
     print("S+")
-    for skill in AuthoritySkills.S_plus_skills:
+    for skill in AxeSkills.S_plus_skills:
         print(skill)
