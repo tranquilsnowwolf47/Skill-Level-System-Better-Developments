@@ -62,67 +62,105 @@ class FlyingSkills:
 
     E_plus_skills = ("Sweeping + 1")
 
+skill_category = "Flying (Organizational)"
+
 # Displays the full list of E+ skills
 def display_e_plus_skills():
+    print(f"{skill_category} skills:")
     print("E+:")
     print(FlyingSkills.E_plus_skills)
 
 # Displays the full list of D skills
 def display_d_skills():
-    print("D")
+    print(f"{skill_category} skills:")
+    print("D:")
     for skill in FlyingSkills.D_skills:
         print()
 
 # Displays the full list of D+ skills
 def display_d_plus_skills():
-    print("D+")
+    print(f"{skill_category} skills:")
+    print("D+:")
     for skill in FlyingSkills.D_plus_skills:
         print()
 
 # Displays the full list of C skills
 def display_c_skills():
-    print("C")
+    print(f"{skill_category} skills:")
+    print("C:")
     for skill in FlyingSkills.C_skills:
         print()
 
 # Displays the full list of C+ skills
 def display_c_plus_skills():
-    print("C+")
+    print(f"{skill_category} skills:")
+    print("C+:")
     for skill in FlyingSkills.C_plus_skills:
         print()
 
 # Displays the full list of B skills
 def display_b_skills():
-    print("B")
+    print(f"{skill_category} skills:")
+    print("B:")
     for skill in FlyingSkills.B_skills:
         print()
 
 # Displays the full list of B+ skills
 def display_b_plus_skills():
-    print("B+")
+    print(f"{skill_category} skills:")
+    print("B+:")
     for skill in FlyingSkills.B_plus_skills:
         print()
 
 # Displays the full list of A skills
 def display_a_skills():
-    print("A")
+    print(f"{skill_category} skills:")
+    print("A:")
     for skill in FlyingSkills.A_skills:
         print()
 
 # Displays the full list of A+ skills
 def display_a_plus_skills():
-    print("A+")
+    print(f"{skill_category} skills:")
+    print("A+:")
     for skill in FlyingSkills.A_plus_skills:
         print()
 
 # Displays the full list of S skills
 def display_s_skills():
-    print("S")
+    print(f"{skill_category} skills:")
+    print("S:")
     for skill in FlyingSkills.S_skills:
         print()
 
 # Displays the full list of S+ skills
 def display_s_plus_skills():
-    print("S+")
+    print(f"{skill_category} skills:")
+    print("S+:")
     for skill in FlyingSkills.S_plus_skills:
         print()
+
+# Displays the full list of all skills corresponding to each skill letter
+def display_all_flying_skills():
+    print(f"{skill_category} skills:")
+    display_e_plus_skills()
+    print()
+    display_d_skills()
+    print()
+    display_d_plus_skills()
+    print()
+    display_c_skills()
+    print()
+    display_c_plus_skills()
+    print()
+    display_b_skills()
+    print()
+    display_b_plus_skills()
+    print()
+    display_a_skills()
+    print()
+    display_a_plus_skills()
+    print()
+    display_s_skills()
+    print()
+    display_s_plus_skills()
