@@ -142,7 +142,7 @@ def display_b_skills():
 def display_b_plus_skills():
     print(f"{skill_category} skills:")
     print("B+:")
-    for skill in SwordSkills.B_skills:
+    for skill in SwordSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
