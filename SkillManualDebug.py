@@ -2,7 +2,8 @@
 # Date: 2/24/26
 # Author: Aoi | shadowsnowwolf
 
-# Debugigng program for 
+# Debuggging program for Skill Manual
+# Test the functions to make sure everything is up to standard 
 
 import SwordSkills
 import LanceSkills
