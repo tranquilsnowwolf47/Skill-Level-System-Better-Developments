@@ -30,20 +30,21 @@ import FlyingSkills
 #RidingSkills.
 #FlyingSkills.
 
-
-#SwordSkills.display_e_plus_skills()
-#SwordSkills.display_d_skills()
-#SwordSkills.display_d_plus_skills()
-#SwordSkills.display_c_skills()
-#SwordSkills.display_c_plus_skills()
-#SwordSkills.display_b_skills()
-#SwordSkills.display_b_plus_skills()
+# Sword
+#SwordSkills.display_e_plus_skills() | # Cleared
+#SwordSkills.display_d_skills() # Debugged
+#SwordSkills.display_d_plus_skills()  # Debugged
+#SwordSkills.display_c_skills()  # Debugged
+#SwordSkills.display_c_plus_skills() # Debugged
+#SwordSkills.display_b_skills() # Debugged
+#SwordSkills.display_b_plus_skills() # Debugged
 #SwordSkills.display_a_skills()
 #SwordSkills.display_a_plus_skills()
 #SwordSkills.display_s_skills()
 #SwordSkills.display_s_plus_skills()
 #SwordSkills.display_all_sword_skills()
 
+# Lance
 #LanceSkills.display_e_plus_skills()
 #LanceSkills.display_d_skills()
 #LanceSkills.display_d_plus_skills()
@@ -58,4 +59,4 @@ import FlyingSkills
 #LanceSkills.display_all_lance_skills()
 
 
-RidingSkills.RidingSkills.display_a_skills()
+#RidingSkills.RidingSkills.display_a_skills()
