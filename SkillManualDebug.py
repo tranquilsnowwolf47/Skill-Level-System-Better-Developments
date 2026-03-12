@@ -18,6 +18,8 @@ import RidingSkills
 import FlyingSkills
 
 
+# Set true for the parameter if I want to display the skill level category (for the main program)
+
 #SwordSkills.
 #LanceSkills.
 #AxeSkills.
@@ -38,11 +40,11 @@ import FlyingSkills
 #SwordSkills.display_c_plus_skills() # Debugged
 #SwordSkills.display_b_skills() # Debugged
 #SwordSkills.display_b_plus_skills() # Debugged
-#SwordSkills.display_a_skills()
-#SwordSkills.display_a_plus_skills()
-#SwordSkills.display_s_skills()
-#SwordSkills.display_s_plus_skills()
-#SwordSkills.display_all_sword_skills()
+#SwordSkills.display_a_skills() # Debugged
+#SwordSkills.display_a_plus_skills() # Debugged
+#SwordSkills.display_s_skills() # Debugged
+#SwordSkills.display_s_plus_skills() # Debugged  
+#SwordSkills.display_all_sword_skills() # Debugged
 
 # Lance
 #LanceSkills.display_e_plus_skills()
