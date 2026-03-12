@@ -116,84 +116,96 @@ class BowSkills:
 skill_category = "Bow (Intelligence and Education)"
 
 # Displays the full list of E+ skills
-def display_e_plus_skills():
-    print(f"{skill_category} skills:")
+def display_e_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("E+:")
     for skill in BowSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
-def display_d_skills():
-    print(f"{skill_category} skills:")
+def display_d_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("D:")
     print(BowSkills.D_skills)
 
 # Displays the full list of D+ skills
-def display_d_plus_skills():
-    print(f"{skill_category} skills:")
+def display_d_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("D+:")
     for skill in BowSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
-def display_c_skills():
-    print(f"{skill_category} skills:")
+def display_c_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("C:")
     for skill in BowSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
-def display_c_plus_skills():
-    print(f"{skill_category} skills:")
+def display_c_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("C+:")
     for skill in BowSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
-def display_b_skills():
-    print(f"{skill_category} skills:")
+def display_b_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("B:")
     for skill in BowSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
-def display_b_plus_skills():
-    print(f"{skill_category} skills:")
+def display_b_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("B+:")
     for skill in BowSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
-def display_a_skills():
-    print(f"{skill_category} skills:")
+def display_a_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("A:")
     for skill in BowSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
-def display_a_plus_skills():
-    print(f"{skill_category} skills:")
+def display_a_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("A+:")
     for skill in BowSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
-def display_s_skills():
-    print(f"{skill_category} skills:")
+def display_s_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("S:")
     for skill in BowSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
-def display_s_plus_skills():
-    print(f"{skill_category} skills:")
+def display_s_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("S+:")
     for skill in BowSkills.S_plus_skills:
         print(skill)
 
 # Displays the full list of all skills corresponding to each skill letter
-def display_all_bow_skills():
-    print(f"{skill_category} skills:")
+def display_all_bow_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     display_e_plus_skills()
     print()
     display_d_skills()
