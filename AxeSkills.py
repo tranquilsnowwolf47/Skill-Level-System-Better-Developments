@@ -207,85 +207,97 @@ class AxeSkills:
 skill_category = "Axe (Technical and Technological)"
 
 # Displays the full list of E+ skills
-def display_e_plus_skills():
-    print(f"{skill_category} skills:")
+def display_e_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("E+:")
     for skill in AxeSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
-def display_d_skills():
-    print(f"{skill_category} skills:")
+def display_d_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("D:")
     for skill in AxeSkills.D_skills:
         print(skill)
 
 # Displays the full list of D+ skills
-def display_d_plus_skills():
-    print(f"{skill_category} skills:")
+def display_d_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("D+:")
     for skill in AxeSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
-def display_c_skills():
-    print(f"{skill_category} skills:")
+def display_c_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("C:")
     for skill in AxeSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
-def display_c_plus_skills():
-    print(f"{skill_category} skills:")
+def display_c_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("C+:")
     for skill in AxeSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
-def display_b_skills():
-    print(f"{skill_category} skills:")
+def display_b_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("B:")
     for skill in AxeSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
-def display_b_plus_skills():
-    print(f"{skill_category} skills:")
+def display_b_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("B+:")
     for skill in AxeSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
-def display_a_skills():
-    print(f"{skill_category} skills:")
+def display_a_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("A:")
     for skill in AxeSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
-def display_a_plus_skills():
-    print(f"{skill_category} skills:")
+def display_a_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("A+:")
     for skill in AxeSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
-def display_s_skills():
-    print(f"{skill_category} skills:")
+def display_s_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("S:")
     for skill in AxeSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
-def display_s_plus_skills():
-    print(f"{skill_category} skills:")
+def display_s_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("S+:")
     for skill in AxeSkills.S_plus_skills:
         print(skill)
 
 # Displays the full list of all skills corresponding to each skill letter
-def display_all_axe_skills():
-    print(f"{skill_category} skills:")
+def display_all_axe_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     display_e_plus_skills()
     print()
     display_d_skills()
