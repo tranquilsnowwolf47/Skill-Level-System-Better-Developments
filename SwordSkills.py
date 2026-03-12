@@ -97,7 +97,7 @@ class SwordSkills:
 
 skill_category = "Sword (Essentials)"
 
-# Displays the full list of X skills
+# Displays the full list of E+ skills
 def display_e_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
