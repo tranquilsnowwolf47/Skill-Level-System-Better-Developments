@@ -84,84 +84,96 @@ class FaithSkills:
 skill_category = "Faith (Piety and Spirituality)"
 
 # Displays the full list of E+ skills
-def display_e_plus_skills():
-    print(f"{skill_category} skills:")
+def display_e_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("E+:")
     for skill in FaithSkills.E_plus_skills:
         print(skill)
 
 # Displays the full list of D skills
-def display_d_skills():
-    print(f"{skill_category} skills:")
+def display_d_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("D:")
     print(FaithSkills.D_skills)
 
 # Displays the full list of D+ skills
-def display_d_plus_skills():
-    print(f"{skill_category} skills:")
+def display_d_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("D+:")
     for skill in FaithSkills.D_plus_skills:
         print(skill)
 
 # Displays the full list of C skills
-def display_c_skills():
-    print(f"{skill_category} skills:")
+def display_c_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("C:")
     for skill in FaithSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of C+ skills
-def display_c_plus_skills():
-    print(f"{skill_category} skills:")
+def display_c_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("C+:")
     for skill in FaithSkills.C_plus_skills:
         print(skill)
 
 # Displays the full list of B skills
-def display_b_skills():
-    print(f"{skill_category} skills:")
+def display_b_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("B:")
     for skill in FaithSkills.B_skills:
         print(skill)
 
 # Displays the full list of B+ skills
-def display_b_plus_skills():
-    print(f"{skill_category} skills:")
+def display_b_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("B+:")
     for skill in FaithSkills.B_plus_skills:
         print(skill)
 
 # Displays the full list of A skills
-def display_a_skills():
-    print(f"{skill_category} skills:")
+def display_a_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("A:")
     for skill in FaithSkills.A_skills:
         print(skill)
 
 # Displays the full list of A+ skills
-def display_a_plus_skills():
-    print(f"{skill_category} skills:")
+def display_a_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("A+:")
     for skill in FaithSkills.A_plus_skills:
         print(skill)
 
 # Displays the full list of S skills
-def display_s_skills():
-    print(f"{skill_category} skills:")
+def display_s_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("S:")
     for skill in FaithSkills.S_skills:
         print(skill)
 
 # Displays the full list of S+ skills
-def display_s_plus_skills():
-    print(f"{skill_category} skills:")
+def display_s_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     print("S+:")
     for skill in FaithSkills.S_plus_skills:
         print(skill)
 
 # Displays the full list of all skills corresponding to each skill letter
-def display_all_faith_skills():
-    print(f"{skill_category} skills:")
+def display_all_faith_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
     display_e_plus_skills()
     print()
     display_d_skills()
