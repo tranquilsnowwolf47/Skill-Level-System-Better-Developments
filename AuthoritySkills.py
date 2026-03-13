@@ -237,7 +237,8 @@ def display_s_plus_skills(show_header=False):
 
 # Displays the full list of all skills corresponding to each skill letter
 def display_all_authority_skills(show_header=False):
-    print(f"{skill_category} skills:")
+    if show_header:
+        print(f"{skill_category} skills:")
     display_e_plus_skills()
     print()
     display_d_skills()
