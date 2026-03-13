@@ -44,7 +44,7 @@ class ReasonSkills:
     A_skills = (
 "Distortion Slayer",
 "Monk",
-"Stoic"
+"Stoic",
 "Visual Manifestation",
 "Healthy Habits + 3",
 "Self Belief + 3",
