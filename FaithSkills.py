@@ -111,7 +111,7 @@ def display_c_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("C:")
-    for skill in FaithSkills.C_plus_skills:
+    for skill in FaithSkills.C_skills:
         print(skill)
 
 # Displays the full list of C+ skills
