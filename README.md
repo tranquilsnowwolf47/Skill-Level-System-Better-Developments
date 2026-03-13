@@ -1,1 +1,2 @@
 This is my Skill Level System, which is a gamified self-development system based on the Skill Level System from the Japanese role-playing game, Fire Emblem: Three Houses. 
+The Skill Level system categorizes key areas of improvement via Skill Categories (i.e., Sword, Lance, Axe, etc), which are associated with a real-life self-development category (i.e., programming skills, martial arts skills, art skills, etc).
