@@ -21,17 +21,10 @@
         #print(skill)
 
 
-import SwordSkills
-import LanceSkills
-import AxeSkills
-import BowSkills
-import BrawlSkills
-import ReasonSkills
-import FaithSkills
-import AuthoritySkills
-import HeavyArmorSkills
-import RidingSkills
-import FlyingSkills
+import SwordSkills, LanceSkills, AxeSkills
+import BowSkills, BrawlSkills, ReasonSkills
+import FaithSkills, AuthoritySkills, HeavyArmorSkills
+import RidingSkills, FlyingSkills
 
 skill_categories = ("Sword","Lance","Axe","Bow (Intelligence and Education)","Brawl","Reason (Mind and Spirit)","Faith","Authority","Heavy Armor","Riding (Fitness and Extracurricular)","Flying (Organizational)")
 skill_categories = (SwordSkills.skill_category, LanceSkills.skill_category, AxeSkills.skill_category, BowSkills.skill_category, BrawlSkills.skill_category,
