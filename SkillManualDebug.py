@@ -113,46 +113,73 @@ import FlyingSkills
 #ReasonSkills.display_all_reason_skills() # Debugged
 
 # Faith
-FaithSkills.display_e_plus_skills() #
-#FaithSkills.display_d_skills() #
-#FaithSkills.display_d_plus_skills() #
-#FaithSkills.display_c_skills() #
-#FaithSkills.display_c_plus_skills() #
-#FaithSkills.display_b_skills() #
-#FaithSkills.display_b_plus_skills() #
-#FaithSkills.display_a_skills #
-#FaithSkills.display_a_plus_skills() #
-#FaithSkills.display_all_reason_skills() #
+#FaithSkills.display_e_plus_skills() # Debugged
+#FaithSkills.display_d_skills() # Debugged
+#FaithSkills.display_d_plus_skills() # Debugged
+#FaithSkills.display_c_skills() # Debugged
+#FaithSkills.display_c_plus_skills() # Debugged
+#FaithSkills.display_b_skills() # Debugged
+#FaithSkills.display_b_plus_skills() # Debugged
+#FaithSkills.display_a_skills() # Debugged
+#FaithSkills.display_a_plus_skills() # Debugged
+#FaithSkills.display_s_skills() # Debugged
+#FaithSkills.display_s_plus_skills() # Debugged
+#FaithSkills.display_all_faith_skills() # Debugged
 
 # Authority
-#AuthoritySkills.display_e_plus_skills() #
-#AuthoritySkills.display_d_skills() #
-#AuthoritySkills.display_d_plus_skills() #
-#AuthoritySkills.display_c_skills() #
-#AuthoritySkills.display_c_plus_skills() #
-#AuthoritySkills.display_b_skills() #
-#AuthoritySkills.display_b_plus_skills() #
-#AuthoritySkills.display_a_skills #
-#AuthoritySkills.display_a_plus_skills() #
-#AuthoritySkills.display_all_reason_skills() #
+#AuthoritySkills.display_e_plus_skills() # Debugged
+#AuthoritySkills.display_d_skills() # Debugged
+#AuthoritySkills.display_d_plus_skills() # Debugged
+#AuthoritySkills.display_c_skills() # Debugged
+#AuthoritySkills.display_c_plus_skills() # Debugged
+#AuthoritySkills.display_b_skills() # Debugged
+#AuthoritySkills.display_b_plus_skills() # Debugged
+#AuthoritySkills.display_a_skills() # Debugged
+#AuthoritySkills.display_a_plus_skills() # Debugged
+#AuthoritySkills.display_s_skills() # Debugged
+#AuthoritySkills.display_s_plus_skills() # Debugged
+#AuthoritySkills.display_all_authority_skills() # Debugged
 
-
-# Heavy Armor
-#HeavyArmorSkills.display_e_plus_skills() #
-#HeavyArmorSkills.display_d_skills() #
-#HeavyArmorSkills.display_d_plus_skills() #
-#HeavyArmorSkills.display_c_skills() #
-#HeavyArmorSkills.display_c_plus_skills() #
-#HeavyArmorSkills.display_b_skills() #
-#HeavyArmorSkills.display_b_plus_skills() #
-#HeavyArmorSkills.display_a_skills #
-#HeavyArmorSkills.display_a_plus_skills() #
-#HeavyArmorSkills.display_all_reason_skills() #
+# Heavy Armor 
+#HeavyArmorSkills.display_e_plus_skills() # Debugged
+#HeavyArmorSkills.display_d_skills() # Debugged
+#HeavyArmorSkills.display_d_plus_skills() # Debugged
+#HeavyArmorSkills.display_c_skills() # Debugged
+#HeavyArmorSkills.display_c_plus_skills() # Debugged
+#HeavyArmorSkills.display_b_skills() # Debugged
+#HeavyArmorSkills.display_b_plus_skills() # Debugged
+#HeavyArmorSkills.display_a_skills() # Debugged
+#HeavyArmorSkills.display_a_plus_skills() # Debugged
+#HeavyArmorSkills.display_s_skills() # Debugged
+#HeavyArmorSkills.display_s_plus_skills() # Debugged
+#HeavyArmorSkills.display_all_heavy_armor_skills() # Debugged
 
 # Riding
-#RidingSkills.RidingSkills.display_a_skills()
-
+#RidingSkills.display_e_plus_skills() # Debugged
+#RidingSkills.display_d_skills() # Debugged
+#RidingSkills.display_d_plus_skills() # Debugged
+#RidingSkills.display_c_skills() # Debugged 
+#RidingSkills.display_c_plus_skills() # Debugged
+#RidingSkills.display_b_skills() # Debugged
+#RidingSkills.display_b_plus_skills() # Debugged
+#RidingSkills.display_a_skills() # Debugged 
+#RidingSkills.display_a_plus_skills() # Debugged
+#RidingSkills.display_s_skills() # Debugged
+#RidingSkills.display_s_plus_skills() # Debugged
+#RidingSkills.display_all_riding_skills() # Debugged
 
 # Flying
+#FlyingSkills.display_e_plus_skills() # Debugged
+#FlyingSkills.display_d_skills() # Debugged
+#FlyingSkills.display_d_plus_skills() # Debugged
+#FlyingSkills.display_c_skills() # Debugged
+#FlyingSkills.display_c_plus_skills() # Debugged
+#FlyingSkills.display_b_skills() # Debugged
+#FlyingSkills.display_b_plus_skills() # Debugged
+#FlyingSkills.display_a_skills() # Debugged
+#FlyingSkills.display_a_plus_skills() # Debugged
+#FlyingSkills.display_s_skills() # Debugged
+#FlyingSkills.display_s_plus_skills() # Debugged
+#FlyingSkills.display_all_flying_skills() # Debugged
 
 
