@@ -22,7 +22,7 @@ class BowSkills:
 )
     
     A_plus_skills = (
-"Wunderkind"
+"Wunderkind",
 "N4 | Requirement: Reach N4 in Japanese",
 "Math + 4",
 "Grammar + 3",
@@ -103,7 +103,7 @@ class BowSkills:
 "Bow Prowess Lvl. 2", 
 "Note Taking + 2"
 )
-    
+
     D_skills = ("Neat Handwriting + 2")
     
     E_plus_skills = (
