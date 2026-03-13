@@ -33,7 +33,11 @@ import HeavyArmorSkills
 import RidingSkills
 import FlyingSkills
 
-skill_categories = ("Sword","Lance","Axe","Bow","Brawl","Reason","Faith","Authority","Heavy Armor","Riding","Flying")
+skill_categories = ("Sword","Lance","Axe","Bow (Intelligence and Education)","Brawl","Reason (Mind and Spirit)","Faith","Authority","Heavy Armor","Riding (Fitness and Extracurricular)","Flying (Organizational)")
+skill_categories = (SwordSkills.skill_category, LanceSkills.skill_category, AxeSkills.skill_category, BowSkills.skill_category, BrawlSkills.skill_category,
+ReasonSkills.skill_category, FaithSkills.skill_category, AuthoritySkills.skill_category, HeavyArmorSkills.skill_category, RidingSkills.skill_category, FlyingSkills.skill_category)
+
+
 display_choices = ("All", "Letters")
 letter_grades = ("E+","D","D+","C","C+","B","B+","A","A+","S","S+")
 unlocked_skills = []
@@ -43,14 +47,13 @@ unlocked_skills = []
 
 # Display the basic info
 print("Skill Categories: ")
+for skill_index, skill_category in enumerate(skill_categories,start=1):
+    print(f"\t{skill_index}. {skill_category}")
 print("---------------------------------------------------------------------")
-for skill_category in skill_categories:
-    print(skill_category)
-print()
 
 
 # Get the skill category
-skill_category_choice = input("Please enter a skill category to see info for: ").capitalize() 
+skill_category_choice = input("Please enter a skill category to see info for: (1-11)").capitalize() 
 
 # Input validation
 if skill_category in skill_categories:
