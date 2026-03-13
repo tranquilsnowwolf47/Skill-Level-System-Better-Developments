@@ -45,7 +45,7 @@ class AxeSkills:
 "Web Development + 5")
     
     A_plus_skills = (
-"Python Master" 
+"Python Master",
 "Java Master",
 "JavaScript Master",
 "Database Manager",
@@ -128,34 +128,34 @@ class AxeSkills:
     
     B_skills = (
 "Encrypter | Requirement: Learn about encryption and how to encrypt passwords",
-"Programming + 2" 
-"Programming Logic + 2" 
-"Database + 2" 
-"Security Essentials + 2" 
-"Cyber Security + 1" 
-"C# +2"
-"C +2"
-"JavaScript +2"
-"Pascal Case + 2"
-"Troubleshooting + 2" 
-"Arrays + 2"
-"Functions + 2"
-"OOP + 1"
+"Programming + 2", 
+"Programming Logic + 2", 
+"Database + 2", 
+"Security Essentials + 2", 
+"Cyber Security + 1", 
+"C# +2",
+"C +2",
+"JavaScript +2",
+"Pascal Case + 2",
+"Troubleshooting + 2",
+"Arrays + 2",
+"Functions + 2",
+"OOP + 1",
 "Decision Structures + 3")
     
     C_plus_skills = (
-"Database + 1" 
-"Security Essentials + 1" 
-"JavaScript + 1"
-"C++ + 1 "
-"C# + 1"
-"Snake Case + 2"
-"Loops + 2"
-"Functions + 1"
-"Data handling + 2"
-"Variables + 3"
-"Input + 3"
-"Decision Structures + 2"
+"Database + 1",
+"Security Essentials + 1",
+"JavaScript + 1",
+"C++ + 1 ",
+"C# + 1",
+"Snake Case + 2",
+"Loops + 2",
+"Functions + 1",
+"Data handling + 2",
+"Variables + 3",
+"Input + 3",
+"Decision Structures + 2",
 "Axe Prowess Lvl. 3")
     
     C_skills = (
@@ -204,7 +204,7 @@ class AxeSkills:
 "Axe Prowess Lvl. 1"
 )
     
-skill_category = "Axe (Technical and Technological)"
+skill_category = "Axe (Technical and Technilogical)"
 
 # Displays the full list of E+ skills
 def display_e_plus_skills(show_header=False):
