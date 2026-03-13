@@ -61,17 +61,17 @@ class RidingSkills:
     )
 
     B_skills = (
-    "Safe Driver" 
-    "Movement + 2" 
-    "Footwork + 2" 
-    "Breakdancing + 2" 
-    "Highway Driving + 2"
-    "Lane Switching + 2"
-    "Parking + 3"
-    "Fitness Education + 3"
-    "Meal Prep + 3"
-    "Eating Habits Lvl 2"
-    "Jumping Jacks + 4"
+    "Safe Driver", 
+    "Movement + 2", 
+    "Footwork + 2",
+    "Breakdancing + 2" ,
+    "Highway Driving + 2",
+    "Lane Switching + 2",
+    "Parking + 3",
+    "Fitness Education + 3",
+    "Meal Prep + 3",
+    "Eating Habits Lvl 2",
+    "Jumping Jacks + 4",
     "Push Ups + 3"
 )
     C_plus_skills = (
@@ -113,119 +113,119 @@ class RidingSkills:
     "Jumping Jacks + 1"
 )
 
-    skill_category = "Riding (Fitness and Extracurricular)"
+skill_category = "Riding (Fitness and Extracurricular)"
 
-    # Displays the full list of E+ skills
-    def display_e_plus_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("E+:")
-        for skill in RidingSkills.E_plus_skills:
-            print(skill)
+# Displays the full list of E+ skills
+def display_e_plus_skills(show_header=False):
+    if show_header:
+        print(f"{skill_category} skills:")
+    print("E+:")
+    for skill in RidingSkills.E_plus_skills:
+        print(skill)
 
-    # Displays the full list of D skills
-    def display_d_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("D:")
-        for skill in RidingSkills.D_skills:
-            print(skill)
+# Displays the full list of D skills
+def display_d_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("D:")
+    for skill in RidingSkills.D_skills:
+        print(skill)
         
-    # Displays the full list of D+ skills
-    def display_d_plus_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("D+:")
-        for skill in RidingSkills.D_plus_skills:
-            print(skill)
+# Displays the full list of D+ skills
+def display_d_plus_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("D+:")
+    for skill in RidingSkills.D_plus_skills:
+        print(skill)
 
-    # Displays the full list of C skills
-    def display_c_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("C:")
-        for skill in RidingSkills.C_skills:
-            print(skill)
+# Displays the full list of C skills
+def display_c_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("C:")
+    for skill in RidingSkills.C_skills:
+        print(skill)
 
-    # Displays the full list of C+ skills
-    def display_c_plus_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("C+:")
-        for skill in RidingSkills.C_plus_skills:
-            print(skill)
+# Displays the full list of C+ skills
+def display_c_plus_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("C+:")
+    for skill in RidingSkills.C_plus_skills:
+        print(skill)
 
-    # Displays the full list of B skills
-    def display_b_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("B:")
-        for skill in RidingSkills.B_skills:
-            print(skill)
+# Displays the full list of B skills
+def display_b_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("B:")
+    for skill in RidingSkills.B_skills:
+        print(skill)
 
-    # Displays the full list of B+ skills
-    def display_b_plus_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("B+:")
-        for skill in RidingSkills.B_plus_skills:
-            print(skill)
+# Displays the full list of B+ skills
+def display_b_plus_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("B+:")
+    for skill in RidingSkills.B_plus_skills:
+        print(skill)
 
-    # Displays the full list of A skills
-    def display_a_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("A:")
-        for skill in RidingSkills.A_skills:
-            print(skill)
+# Displays the full list of A skills
+def display_a_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("A:")
+    for skill in RidingSkills.A_skills:
+        print(skill)
 
-    # Displays the full list of A+ skills
-    def display_a_plus_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("A+:")
-        for skill in RidingSkills.A_plus_skills:
-            print(skill)
+# Displays the full list of A+ skills
+def display_a_plus_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("A+:")
+    for skill in RidingSkills.A_plus_skills:
+        print(skill)
 
-    # Displays the full list of S skills
-    def display_s_sills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("S:")
-        for skill in RidingSkills.S_skills:
-            print(skill)
+# Displays the full list of S skills
+def display_s_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("S:")
+    for skill in RidingSkills.S_skills:
+        print(skill)
 
-    # Displays the full list of S+ skills
-    def display_s_plus_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        print("S+:")
-        for skill in RidingSkills.S_plus_skills:
-            print(skill)
+# Displays the full list of S+ skills
+def display_s_plus_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    print("S+:")
+    for skill in RidingSkills.S_plus_skills:
+        print(skill)
 
-    # Displays the full list of all skills corresponding to each skill letter
-    def display_all_riding_skills(show_header=False):
-        if show_header:
-            print(f"{RidingSkills.skill_category} skills:")
-        RidingSkills.display_e_plus_skills()
-        print()
-        RidingSkills.display_d_skills()
-        print()
-        RidingSkills.display_d_plus_skills()
-        print()
-        RidingSkills.display_c_skills()
-        print()
-        RidingSkills.display_c_plus_skills()
-        print()
-        RidingSkills.display_b_skills()
-        print()
-        RidingSkills.display_b_plus_skills()
-        print()
-        RidingSkills.display_a_skills()
-        print()
-        RidingSkills.display_a_plus_skills()
-        print()
-        RidingSkills.display_s_skills()
-        print()
-        RidingSkills.display_s_plus_skills()
+# Displays the full list of all skills corresponding to each skill letter
+def display_all_riding_skills(show_header=False):
+    if show_header:
+            print(f"{skill_category} skills:")
+    display_e_plus_skills()
+    print()
+    display_d_skills()
+    print()
+    display_d_plus_skills()
+    print()
+    display_c_skills()
+    print()
+    display_c_plus_skills()
+    print()
+    display_b_skills()
+    print()
+    display_b_plus_skills()
+    print()
+    display_a_skills()
+    print()
+    display_a_plus_skills()
+    print()
+    display_s_skills()
+    print()
+    display_s_plus_skills()
 
