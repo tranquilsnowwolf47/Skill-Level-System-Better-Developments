@@ -21,22 +21,15 @@
         #print(skill)
 
 
-import SwordSkills
-import LanceSkills
-import AxeSkills
-import BowSkills
-import BrawlSkills
-import ReasonSkills
-import FaithSkills
-import AuthoritySkills
-import HeavyArmorSkills
-import RidingSkills
-import FlyingSkills
+import SwordSkills, LanceSkills, AxeSkills
+import BowSkills, BrawlSkills, ReasonSkills
+import FaithSkills, AuthoritySkills, HeavyArmorSkills
+import RidingSkills, FlyingSkills
 
 skill_categories = ("Sword","Lance","Axe","Bow (Intelligence and Education)","Brawl","Reason (Mind and Spirit)","Faith","Authority","Heavy Armor","Riding (Fitness and Extracurricular)","Flying (Organizational)")
 skill_categories = (SwordSkills.skill_category, LanceSkills.skill_category, AxeSkills.skill_category, BowSkills.skill_category, BrawlSkills.skill_category,
 ReasonSkills.skill_category, FaithSkills.skill_category, AuthoritySkills.skill_category, HeavyArmorSkills.skill_category, RidingSkills.skill_category, FlyingSkills.skill_category)
-
+skill_category_menu_choices = (1,2,3,4,5,6,7,8,9,10,11)
 
 display_choices = ("All", "Letters")
 letter_grades = ("E+","D","D+","C","C+","B","B+","A","A+","S","S+")
@@ -53,44 +46,64 @@ print("---------------------------------------------------------------------")
 
 
 # Get the skill category
-skill_category_choice = input("Please enter a skill category to see info for: (1-11)").capitalize() 
+skill_category_choice = int(input("Please enter a skill category to see info for: (1-11)")).capitalize() 
 
 # Input validation
-if skill_category in skill_categories:
-    valid_skill_category = True
-    if skill_category_choice == skill_categories[0]: # 
+# Confirm if the user entered a valid input (number)
+if skill_category_choice in skill_category_menu_choices:
+    valid_menu_choice = True
+
+    
+    # Validate per skill category
+    # For Sword
+    if skill_category_choice == skill_category_menu_choices[0]: 
         print("Would you like to see all skills or by individual letter?")
         display_choice = ("Enter 'All' for all skills or enter 'Letters' for individual letters: ")
         if display_choice in display_choices:
             valid_display_choice = True
-            if display_choice == display_choices[0]:
+            if display_choice == display_choices[0]: # For displaying all letters
                 pass
-            elif display_choice == display_choices[1]:
-                pass
+            elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                print(f"List of {skill_categories[0]} letter grades: ")
+                for letter in letter_grades:
+                    print(letter_grades)
+
+            letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+            if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                valid_letter = True
+                if letter_input == letter_grades[0]:
+                    pass
+                elif letter_input == letter_grades[]:
+                    pass 
+            else:
+                valid_letter = False
         else:
             valid_display_choice = False
             print("Wrong input.")
 
-    elif skill_category_choice == skill_categories[1]:
+    elif skill_category_choice == skill_category_menu_choices[1]: # For Lance
         pass
-    elif skill_category_choice == skill_categories[2]:
+    elif skill_category_choice == skill_category_menu_choices[2]: # For Axe
         pass
-    elif skill_category_choice == skill_categories[3]:
+    elif skill_category_choice == skill_category_menu_choices[3]: # For Bow
         pass
-    elif skill_category_choice == skill_categories[4]:
+    elif skill_category_choice == skill_category_menu_choices[4]: # For Brawl
         pass
-    elif skill_category_choice == skill_categories[5]:
+    elif skill_category_choice == skill_category_menu_choices[5]: # For Reason
         pass
-    elif skill_category_choice == skill_categories[6]:
+    elif skill_category_choice == skill_category_menu_choices[6]: # For Faith
         pass
-    elif skill_category_choice == skill_categories[7]:
+    elif skill_category_choice == skill_category_menu_choices[7]: # For Authority
         pass
-    elif skill_category_choice == skill_categories[8]:
+    elif skill_category_choice == skill_category_menu_choices[8]: # For Heavy Armor
         pass
-    elif skill_category_choice == skill_categories[9]:
+    elif skill_category_choice == skill_category_menu_choices[9]: # For Riding
         pass
-    elif skill_category_choice == skill_categories[10]:
+    elif skill_category_choice == skill_category_menu_choices[10]: # For Flying
         pass
 else:
-    valid_skill_category = False
+    valid_menu_choice = False
     print("You did not enter the correct skill category.")
+    
+
+
