@@ -6,7 +6,7 @@
 # program (SkillManual.py) 
 
 
-import SkillManual
+import SkillManualV1
 
 #print(len(SkillManual.letter_grades))
 
