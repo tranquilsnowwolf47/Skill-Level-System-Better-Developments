@@ -1,4 +1,4 @@
-# Filename: SkillManual.py
+# Filename: SkillManualV1.py
 # Date: 2/21/26
 # Author: Aoi | shadowsnowowlf 
 
@@ -7,6 +7,8 @@
 # Allow them to view the requirement 
 # Skill tracker program based on letter grade (proficiency level based
 #on gained experience)
+
+# Beta prototype for the Skill Manual program
 
 # Will import modules 
 
