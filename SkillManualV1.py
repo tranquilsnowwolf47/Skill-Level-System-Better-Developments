@@ -176,34 +176,1134 @@ while loop:
                 print("Wrong input.")
     # For Lance
     elif skill_category_choice == skill_category_menu_choices[1]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        LanceSkills.display_all_lance_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        LanceSkills.display_all_lance_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_e_plus_skills(True)
+                            else:
+                                LanceSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_d_skills(True)
+                            else:
+                                LanceSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_d_plus_skills(True)
+                            else:
+                                LanceSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_c_skills(True)
+                            else:
+                                LanceSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_c_plus_skills(True)
+                            else:
+                                LanceSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_b_skills(True) 
+                            else:
+                                LanceSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    LanceSkills.display_b_plus_skills(True)
+                                else:
+                                    LanceSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_a_skills(True)
+                            else:
+                                LanceSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_a_plus_skills(True)
+                            else:
+                                LanceSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_s_skills(True)
+                            else:
+                                LanceSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                LanceSkills.display_s_plus_skills(True)
+                            else:
+                                LanceSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+
     # For Axe
     elif skill_category_choice == skill_category_menu_choices[2]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        AxeSkills.display_all_axe_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        AxeSkills.display_all_axe_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_e_plus_skills(True)
+                            else:
+                                AxeSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_d_skills(True)
+                            else:
+                                AxeSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_d_plus_skills(True)
+                            else:
+                                AxeSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_c_skills(True)
+                            else:
+                                AxeSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_c_plus_skills(True)
+                            else:
+                                AxeSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_b_skills(True) 
+                            else:
+                                AxeSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    AxeSkills.display_b_plus_skills(True)
+                                else:
+                                    AxeSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_a_skills(True)
+                            else:
+                                AxeSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_a_plus_skills(True)
+                            else:
+                                AxeSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_s_skills(True)
+                            else:
+                                AxeSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AxeSkills.display_s_plus_skills(True)
+                            else:
+                                AxeSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+
     # For Bow
     elif skill_category_choice == skill_category_menu_choices[3]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        BowSkills.display_all_bow_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        BowSkills.display_all_bow_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_e_plus_skills(True)
+                            else:
+                                BowSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_d_skills(True)
+                            else:
+                                BowSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_d_plus_skills(True)
+                            else:
+                                BowSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_c_skills(True)
+                            else:
+                                BowSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_c_plus_skills(True)
+                            else:
+                                BowSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_b_skills(True) 
+                            else:
+                                BowSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    BowSkills.display_b_plus_skills(True)
+                                else:
+                                    BowSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_a_skills(True)
+                            else:
+                                BowSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_a_plus_skills(True)
+                            else:
+                                BowSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_s_skills(True)
+                            else:
+                                BowSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BowSkills.display_s_plus_skills(True)
+                            else:
+                                BowSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+
     # For Brawl
     elif skill_category_choice == skill_category_menu_choices[4]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        BrawlSkills.display_all_brawl_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        BrawlSkills.display_all_brawl_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_e_plus_skills(True)
+                            else:
+                                BrawlSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_d_skills(True)
+                            else:
+                                BrawlSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_d_plus_skills(True)
+                            else:
+                                BrawlSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_c_skills(True)
+                            else:
+                                BrawlSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_c_plus_skills(True)
+                            else:
+                                BrawlSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_b_skills(True) 
+                            else:
+                                BrawlSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    BrawlSkills.display_b_plus_skills(True)
+                                else:
+                                    BrawlSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_a_skills(True)
+                            else:
+                                BrawlSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_a_plus_skills(True)
+                            else:
+                                BrawlSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_s_skills(True)
+                            else:
+                                BrawlSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                BrawlSkills.display_s_plus_skills(True)
+                            else:
+                                BrawlSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+
     # For Reason
     elif skill_category_choice == skill_category_menu_choices[5]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        ReasonSkills.display_all_reason_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        ReasonSkills.display_all_reason_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_e_plus_skills(True)
+                            else:
+                                ReasonSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_d_skills(True)
+                            else:
+                                ReasonSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_d_plus_skills(True)
+                            else:
+                                ReasonSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_c_skills(True)
+                            else:
+                                ReasonSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_c_plus_skills(True)
+                            else:
+                                ReasonSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_b_skills(True) 
+                            else:
+                                ReasonSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    ReasonSkills.display_b_plus_skills(True)
+                                else:
+                                    ReasonSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_a_skills(True)
+                            else:
+                                ReasonSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_a_plus_skills(True)
+                            else:
+                                ReasonSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_s_skills(True)
+                            else:
+                                ReasonSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                ReasonSkills.display_s_plus_skills(True)
+                            else:
+                                ReasonSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+
     # For Faith
     elif skill_category_choice == skill_category_menu_choices[6]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        FaithSkills.display_all_faith_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        FaithSkills.display_all_faith_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_e_plus_skills(True)
+                            else:
+                                FaithSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_d_skills(True)
+                            else:
+                                FaithSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_d_plus_skills(True)
+                            else:
+                                FaithSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_c_skills(True)
+                            else:
+                                FaithSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_c_plus_skills(True)
+                            else:
+                                FaithSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_b_skills(True) 
+                            else:
+                                FaithSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    FaithSkills.display_b_plus_skills(True)
+                                else:
+                                    FaithSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_a_skills(True)
+                            else:
+                                FaithSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_a_plus_skills(True)
+                            else:
+                                FaithSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_s_skills(True)
+                            else:
+                                FaithSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FaithSkills.display_s_plus_skills(True)
+                            else:
+                                FaithSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+            
     # For Authority
     elif skill_category_choice == skill_category_menu_choices[7]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        HeavyArmorSkills.display_all_authority_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        AuthoritySkills.display_all_authority_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_e_plus_skills(True)
+                            else:
+                                AuthoritySkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_d_skills(True)
+                            else:
+                                AuthoritySkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_d_plus_skills(True)
+                            else:
+                                AuthoritySkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_c_skills(True)
+                            else:
+                                AuthoritySkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_c_plus_skills(True)
+                            else:
+                                AuthoritySkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_b_skills(True) 
+                            else:
+                                AuthoritySkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    AuthoritySkills.display_b_plus_skills(True)
+                                else:
+                                    AuthoritySkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_a_skills(True)
+                            else:
+                                AuthoritySkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_a_plus_skills(True)
+                            else:
+                                AuthoritySkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_s_skills(True)
+                            else:
+                                AuthoritySkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                AuthoritySkills.display_s_plus_skills(True)
+                            else:
+                                AuthoritySkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+
     # For Heavy Armor
     elif skill_category_choice == skill_category_menu_choices[8]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        HeavyArmorSkills.display_all_heavy_armor_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        HeavyArmorSkills.display_all_heavy_armor_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_e_plus_skills(True)
+                            else:
+                                HeavyArmorSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_d_skills(True)
+                            else:
+                                HeavyArmorSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_d_plus_skills(True)
+                            else:
+                                HeavyArmorSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_c_skills(True)
+                            else:
+                                HeavyArmorSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_c_plus_skills(True)
+                            else:
+                                HeavyArmorSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_b_skills(True) 
+                            else:
+                                HeavyArmorSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    HeavyArmorSkills.display_b_plus_skills(True)
+                                else:
+                                    HeavyArmorSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_a_skills(True)
+                            else:
+                                HeavyArmorSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_a_plus_skills(True)
+                            else:
+                                HeavyArmorSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_s_skills(True)
+                            else:
+                                HeavyArmorSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                HeavyArmorSkills.display_s_plus_skills(True)
+                            else:
+                                HeavyArmorSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+            
     # For Riding
     elif skill_category_choice == skill_category_menu_choices[9]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        RidingSkills.display_all_riding_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        RidingSkills.display_all_riding_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_e_plus_skills(True)
+                            else:
+                                RidingSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_d_skills(True)
+                            else:
+                                RidingSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_d_plus_skills(True)
+                            else:
+                                RidingSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_c_skills(True)
+                            else:
+                                RidingSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_c_plus_skills(True)
+                            else:
+                                RidingSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_b_skills(True) 
+                            else:
+                                RidingSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    RidingSkills.display_b_plus_skills(True)
+                                else:
+                                    RidingSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_a_skills(True)
+                            else:
+                                RidingSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_a_plus_skills(True)
+                            else:
+                                RidingSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_s_skills(True)
+                            else:
+                                RidingSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                RidingSkills.display_s_plus_skills(True)
+                            else:
+                                RidingSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+            
     # For Flying
     elif skill_category_choice == skill_category_menu_choices[10]: 
-        pass
+        # Allows the user to choose if they want to see all the skills at once, or just the skills of the correpsonding letter  
+            display_choice = input("Would you like to see all skills or by individual letter? (Enter 'All' to see all skills or 'Letters' for individual letters): ").capitalize()
+            if display_choice in display_choices: # Validate whether the user chose the right option choice or not 
+                valid_display_choice = True
+        
+                # Operations for all letters
+                if display_choice == display_choices[0]: # For displaying all letters
+                    header_choice = input("Would you like to see a header of the skill category? (Y or N): ").capitalize()
+                    if header_choice == "Y":
+                        print()
+                        FlyingSkills.display_all_flying_skills(True) # call the function that displays all skills with the header 
+                    else:
+                        print()
+                        FlyingSkills.display_all_flying_skills() # call the function that displays all skills without the header        
+                
+                # Operations for indivdual letters
+                elif display_choice == display_choices[1]: # Display the individual letters to the user so they know which letters they can choose
+                    print(f"List of {skill_categories[0]} letter grades: ")
+                    for letter in letter_grades:
+                        print(letter)
+                    print()
+
+                    letter_input = input("Please enter a letter to display skills for: ") # Get the letter from the user that they want to see skills for
+                    if letter_input in letter_grades: # Validate whether they entered a letter in the tuple or not 
+                        valid_letter = True
+                        #print("Eureka! It worked!") # Debugging 
+                        
+                        # For E+
+                        if letter_input == letter_grades[0]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_e_plus_skills(True)
+                            else:
+                                FlyingSkills.display_e_plus_skills() # Call the letter function without the header
+                        # For D
+                        elif letter_input == letter_grades[1]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_d_skills(True)
+                            else:
+                                FlyingSkills.display_d_skills()
+                        # For D+
+                        elif letter_input == letter_grades[2]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_d_plus_skills(True)
+                            else:
+                                FlyingSkills.display_d_plus_skills()
+                        # For C
+                        elif letter_input == letter_grades[3]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_c_skills(True)
+                            else:
+                                FlyingSkills.display_c_skills()
+                        # For C+
+                        elif letter_input == letter_grades[4]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_c_plus_skills(True)
+                            else:
+                                FlyingSkills.display_c_plus_skills()
+                        # For B
+                        elif letter_input == letter_grades[5]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_b_skills(True) 
+                            else:
+                                FlyingSkills.display_b_skills()
+                        # For B+
+                        elif letter_input == letter_grades[6]:
+                                header_choice = get_header_choice()
+                                if header_choice == "Y": # Call the letter function with the header
+                                    FlyingSkills.display_b_plus_skills(True)
+                                else:
+                                    FlyingSkills.display_b_plus_skills() 
+                        # For A
+                        elif letter_input == letter_grades[7]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_a_skills(True)
+                            else:
+                                FlyingSkills.display_a_skills() 
+                        # For A+
+                        elif letter_input == letter_grades[8]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_a_plus_skills(True)
+                            else:
+                                FlyingSkills.display_a_plus_skills() 
+                        # For S
+                        elif letter_input == letter_grades[9]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_s_skills(True)
+                            else:
+                                FlyingSkills.display_s_skills() 
+                        # For S+
+                        elif letter_input == letter_grades[10]:
+                            header_choice = get_header_choice()
+                            if header_choice == "Y": # Call the letter function with the header
+                                FlyingSkills.display_s_plus_skills(True)
+                            else:
+                                FlyingSkills.display_s_plus_skills() 
+                    else:
+                        print("Invalid letter.")
+                        valid_letter = False
+            else:
+                valid_display_choice = False
+                print("Wrong input.")
+            
     # Catch if the user doesn't enter the correct number corresponding to the skill category
     else:
         valid_menu_choice = False
