@@ -6,10 +6,22 @@
 # program (SkillManual.py) 
 
 
-import SkillManualV1
+import SkillManual
 
 #print(len(SkillManual.letter_grades))
 
 # Passes the first test: (enter the skill category)
 # Passes the second test: (Display all skills)
-# third test: individual letters
+# Passes the third: (individual letters)
+
+
+# Logic error:
+# For numbers 2-11, doesn't trigger
+# code block.
+
+
+# Maybe an indent issue? 
+# Sword works 
+# Yeah, it is an indent issue.
+# The other skill category need to be indented
+# So their code is triggered
