@@ -18,7 +18,6 @@ import SkillCategoryLevelingCalculatorV1
 # Debugged
 #SkillCategoryLevelingCalculatorV1.calculate_D(40)
 
-
 # Testing >=
 # Debugged
 #SkillCategoryLevelingCalculatorV1.calculate_D_plus(81)
@@ -26,3 +25,11 @@ import SkillCategoryLevelingCalculatorV1
 # Testing < 
 # Debugged
 #SkillCategoryLevelingCalculatorV1.calculate_D_plus(40)
+
+# Testing >=
+# Debugged
+#SkillCategoryLevelingCalculatorV1.calculate_C(120)
+
+# Testing < 
+# Debugged
+#SkillCategoryLevelingCalculatorV1.calculate_C(50)
