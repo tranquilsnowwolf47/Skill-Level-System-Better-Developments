@@ -33,7 +33,8 @@ import BowSkills, BrawlSkills, ReasonSkills
 import FaithSkills, AuthoritySkills, HeavyArmorSkills
 import RidingSkills, FlyingSkills
 
-skill_categories = ("Sword","Lance","Axe","Bow (Intelligence and Education)","Brawl","Reason (Mind and Spirit)","Faith","Authority","Heavy Armor","Riding (Fitness and Extracurricular)","Flying (Organizational)")
+skill_categories = ("Sword (Essentials)","Lance (The Arts)","Axe (Technical and Technological)","Bow (Intelligence and Education)","Brawl",
+                    "Reason (Mind and Spirit)","Faith","Authority","Heavy Armor","Riding (Fitness and Extracurricular)","Flying (Organizational)")
 skill_categories = (SwordSkills.skill_category, LanceSkills.skill_category, AxeSkills.skill_category, BowSkills.skill_category, BrawlSkills.skill_category,
 ReasonSkills.skill_category, FaithSkills.skill_category, AuthoritySkills.skill_category, HeavyArmorSkills.skill_category, RidingSkills.skill_category, FlyingSkills.skill_category)
 
