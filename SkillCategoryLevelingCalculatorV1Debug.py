@@ -1,3 +1,5 @@
+# Debug program for SkillCategoryLevelingCalculatorV1.py
+
 import SkillCategoryLevelingCalculatorV1
 
 # Testing >=
