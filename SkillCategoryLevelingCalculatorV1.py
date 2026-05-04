@@ -38,7 +38,7 @@
 # S_PLUS_EXP_REQUIREMENT = 760
 # MAX_EXP_REQUIREMENT = 900
 
-letter_grades = ("E+","D","D+","C","C+","B","B+","A","A+","S","S+","MAX")
+letter_grades = ("E","E+","D","D+","C","C+","B","B+","A","A+","S","S+","MAX")
 
 
 # I also may not need OOP. I could probably uses tuples and dictionaries
@@ -70,19 +70,28 @@ level_up = False
 # x is a temproary placeholder for the dummy EXP variable
 # Fix that later 
 
-# Subtracts EXP from the user's EXP total 
+
+
+# Debugged 
 def calculate_E_plus(x, E_PLUS_EXP_REQUIREMENT=40):
     # Requirement for promotion to letter: 40 EXP
     # Subtracts the user's total EXP points from the requirement
     # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
-    new_letter = letter_grades[0] # Sets the upgraded letter to E+ from the tuple 
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
     if x >= E_PLUS_EXP_REQUIREMENT:
         # Perform the calculation
         x -= E_PLUS_EXP_REQUIREMENT
         level_up = True
 
-        # Output the new info to them 
+        # Output the new info to them  
         print("You leveled up!")
         print(f"New letter: {new_letter}")
         print(f"Remainder EXP: {x}")
@@ -92,80 +101,448 @@ def calculate_E_plus(x, E_PLUS_EXP_REQUIREMENT=40):
     
     # If the user doesn't level up, just enter the EXP to next subtracted from their input
     else:
-        # Let the uer know that they didn't reach the EXP requirement 
-        print("You did not have enough EXP to reach the next letter")
-        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
-
         # Calculates the deduction requirement for the next letter desired
         EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
         # Let's the user know how much EXP they need from the current deduction to get to the next rank
         print(f"EXP to next: {EXP_to_next}")
-        
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
+
+# Debugged  
 def calculate_D(x, D_EXP_REQUIREMENT=60):
     # Requirement for promotion to letter: 60 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E+)
+    current_letter = letter_grades[1]
+    
+    # Sets the upgraded letter to D+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[2] 
 
-    return x - D_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= D_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= D_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = D_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {D_EXP_REQUIREMENT}")
+
+
 
 def calculate_D_plus(x, D_PLUS_EXP_REQUIREMENT=80):
     # Requirement for promotion to letter: 80 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - D_PLUS_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_C(x, C_EXP_REQUIREMENT=120):
     # Requirement for promotion to letter: 120 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - C_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_C_plus(x, C_PLUS_EXP_REQUIREMENT=160):
     # Requirement for promotion to letter: 160 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - C_PLUS_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_B(x, B_EXP_REQUIREMENT=220):
     # Requirement for promotion to letter: 220 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - B_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_B_plus(x, B_PLUS_EXP_REQUIREMENT=280):
     # Requirement for promotion to letter: 280 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - B_PLUS_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_A(x, A_EXP_REQUIREMENT=360):
     # Requirement for promotion to letter: 360 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - A_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_A_plus(x, A_PLUS_EXP_REQUIREMENT=440):
     # Requirement for promotion to letter: 440 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - A_PLUS_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_S(x, S_EXP_REQUIREMENT=540):
     # Requirement for promotion to letter: 540 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - S_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_S_plus(x, S_PLUS_EXP_REQUIREMENT=760):
     # Requirement for promotion to letter: 760 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - S_PLUS_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 def calculate_MAX(x, MAX_EXP_REQUIREMENT=900):
     # Requirement for promotion to letter: 900 EXP
     # Subtracts the user's total EXP points from the requirement
+    # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
+    
+    # Sets the current letter, granted the user didn't level up by default from the tuple (E)
+    current_letter = letter_grades[0]
+    
+    # Sets the upgraded letter to E+ from the tuple granted the user leveled up 
+    new_letter = letter_grades[1] 
 
-    return x - MAX_EXP_REQUIREMENT
+    # Test for decision branches
+    # If the user leveled up, decrement the EXP and upgrade their letter grade
+    if x >= E_PLUS_EXP_REQUIREMENT:
+        # Perform the calculation
+        x -= E_PLUS_EXP_REQUIREMENT
+        level_up = True
+
+        # Output the new info to them  
+        print("You leveled up!")
+        print(f"New letter: {new_letter}")
+        print(f"Remainder EXP: {x}")
+
+        # Return the new letter and the remainder EXP to modify later
+        return new_letter, x
+    
+    # If the user doesn't level up, just enter the EXP to next subtracted from their input
+    else:
+        # Calculates the deduction requirement for the next letter desired
+        EXP_to_next = E_PLUS_EXP_REQUIREMENT - x
+
+        # Let the uer know that they didn't reach the EXP requirement 
+        print("You do not have enough EXP to reach the next letter")
+        print(f"\nCurrent letter: {current_letter}")
+        # Let's the user know how much EXP they need from the current deduction to get to the next rank
+        print(f"EXP to next: {EXP_to_next}")
+        print("----------------------------------------------------------")
+        print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
 
 # Get the user's input
