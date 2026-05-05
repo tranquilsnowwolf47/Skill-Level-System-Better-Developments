@@ -5,7 +5,7 @@
 
 # Strategtic planning:
 # 1. Define the EXP requirements for each letter | Done!
-# 2. Create functions that calculate to each letter | Done
+# 2. Create functions that calculate to each letter | Done!
 
 
 # I may need OOP. I'll need to define each skill category
@@ -62,9 +62,10 @@ class GradeCalculator:
 
     level_up = False
 
+
     # Debugged 
     # Performs calculations to E+
-    def calculate_to_E_plus(x=0, E_PLUS_EXP_REQUIREMENT=40):
+    def calculate_to_E_plus(self, x=0, E_PLUS_EXP_REQUIREMENT=40):
         # Requirement for promotion to letter: 40 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -83,7 +84,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\n\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -104,7 +105,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {E_PLUS_EXP_REQUIREMENT}")
 
     # Debugged  
-    def calculate_to_D(x=0, D_EXP_REQUIREMENT=60):
+    def calculate_to_D(self, x=0, D_EXP_REQUIREMENT=60):
         # Requirement for promotion to letter: 60 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -123,7 +124,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -145,7 +146,7 @@ class GradeCalculator:
 
 
     # Debugged
-    def calculate_to_D_plus(x=0, D_PLUS_EXP_REQUIREMENT=80):
+    def calculate_to_D_plus(self, x=0, D_PLUS_EXP_REQUIREMENT=80):
         # Requirement for promotion to letter: 80 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -164,7 +165,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -186,7 +187,7 @@ class GradeCalculator:
 
 
     # Debugged
-    def calculate_to_C(x=0, C_EXP_REQUIREMENT=120):
+    def calculate_to_C(self, x=0, C_EXP_REQUIREMENT=120):
         # Requirement for promotion to letter: 120 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -205,7 +206,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -226,7 +227,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {C_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_C_plus(x=0, C_PLUS_EXP_REQUIREMENT=160):
+    def calculate_to_C_plus(self, x=0, C_PLUS_EXP_REQUIREMENT=160):
         # Requirement for promotion to letter: 160 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -245,7 +246,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -266,7 +267,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {C_PLUS_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_B(x=0, B_EXP_REQUIREMENT=220):
+    def calculate_to_B(self, x=0, B_EXP_REQUIREMENT=220):
         # Requirement for promotion to letter: 220 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -285,7 +286,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -306,7 +307,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {B_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_B_plus(x=0, B_PLUS_EXP_REQUIREMENT=280):
+    def calculate_to_B_plus(self, x=0, B_PLUS_EXP_REQUIREMENT=280):
         # Requirement for promotion to letter: 280 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -325,7 +326,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -346,7 +347,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {B_PLUS_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_A(x=0, A_EXP_REQUIREMENT=360):
+    def calculate_to_A(self, x=0, A_EXP_REQUIREMENT=360):
         # Requirement for promotion to letter: 360 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -365,7 +366,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -386,7 +387,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {A_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_A_plus(x=0, A_PLUS_EXP_REQUIREMENT=440):
+    def calculate_to_A_plus(self, x=0, A_PLUS_EXP_REQUIREMENT=440):
         # Requirement for promotion to letter: 440 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -405,7 +406,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -427,7 +428,7 @@ class GradeCalculator:
 
 
     # Debugged
-    def calculate_to_S(x=0, S_EXP_REQUIREMENT=540):
+    def calculate_to_S(self, x=0, S_EXP_REQUIREMENT=540):
         # Requirement for promotion to letter: 540 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -446,7 +447,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -467,7 +468,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {S_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_S_plus(x=0, S_PLUS_EXP_REQUIREMENT=760):
+    def calculate_to_S_plus(self, x=0, S_PLUS_EXP_REQUIREMENT=760):
         # Requirement for promotion to letter: 760 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -486,7 +487,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -507,7 +508,7 @@ class GradeCalculator:
             print(f"\nEXP required for {new_letter}: {S_PLUS_EXP_REQUIREMENT}")
 
     # Debugged
-    def calculate_to_MAX(x=0, MAX_EXP_REQUIREMENT=900):
+    def calculate_to_MAX(self, x=0, MAX_EXP_REQUIREMENT=900):
         # Requirement for promotion to letter: 900 EXP
         # Subtracts the user's total EXP points from the requirement
         # If the EXP total is greater or equal to the requirement, the user upgrades to the next letter
@@ -526,7 +527,7 @@ class GradeCalculator:
             level_up = True
 
             # Output the new info to them  
-            print("You leveled up!")
+            print("\nYou leveled up!")
             print(f"New letter: {new_letter}")
             print(f"Remainder EXP: {x}")
 
@@ -546,48 +547,7 @@ class GradeCalculator:
             print("----------------------------------------------------------")
             print(f"\nEXP required for {new_letter}: {MAX_EXP_REQUIREMENT}")
 
-    # 
-    def display_skill_category(self):
-        print(f"{self.skill_category}")
-
 dummy_EXP = 200
-
-class Sword(GradeCalculator):
-    pass
-
-class Lance(GradeCalculator):
-    pass
-
-class Axe(GradeCalculator):
-    pass
-
-
-class Bow(GradeCalculator):
-    pass
-
-
-class Brawl(GradeCalculator):
-    pass
-
-class Reason(GradeCalculator):
-    pass
-
-
-class Faith(GradeCalculator):
-    pass
-
-
-class Authority(GradeCalculator):
-    pass
-
-class HeavyArmor(GradeCalculator):
-    pass
-
-class Riding(GradeCalculator):
-    pass
-
-class Flying(GradeCalculator):
-    pass
 
 # Get the user's input
 # calculate based on user's input
@@ -612,107 +572,113 @@ skill_categories_elements = (1,2,3,4,5,6,7,8,9,10,11)
 valid_total_exp_input = False
 valid_skill_category_choice = False
 valid_letter_grade_input = False
-
+current_skill_category = ""
 
 # Tuple that contains the methods for the calculations
-calculations = (GradeCalculator.calculate_to_E_plus(), 
-                GradeCalculator.calculate_to_D(), GradeCalculator.calculate_to_D_plus(),
-                GradeCalculator.calculate_to_C(), GradeCalculator.calculate_to_C_plus(),
-                GradeCalculator.calculate_to_B(), GradeCalculator.calculate_to_B_plus(),
-                GradeCalculator.calculate_to_A(), GradeCalculator.calculate_to_A_plus(), 
-                GradeCalculator.calculate_to_S_plus(), GradeCalculator.calculate_to_S(),
+calculations = (GradeCalculator.calculate_to_E_plus, 
+                GradeCalculator.calculate_to_D, GradeCalculator.calculate_to_D_plus,
+                GradeCalculator.calculate_to_C, GradeCalculator.calculate_to_C_plus,
+                GradeCalculator.calculate_to_B, GradeCalculator.calculate_to_B_plus,
+                GradeCalculator.calculate_to_A, GradeCalculator.calculate_to_A_plus, 
+                GradeCalculator.calculate_to_S, GradeCalculator.calculate_to_S_plus,
                 GradeCalculator.calculate_to_MAX)
 
-# Display the list of skill categories
-print("List of Skill Categories: ")
-print("------------------------------------------------")
-for category_index, skill_category in enumerate(GradeCalculator.skill_categories,start=1):
-    print(f"{category_index}. {skill_category}")
+def display_skill_category_info():
+    print(f"\nSkill Category: {current_skill_category.skill_category}")
+    print("----------------------------------------------")
 
-# Let the user choose what skill category they want to calculate for 
-skill_category_choice = int(input("\nPlease enter a skill category to upgrade (1-11): ").strip())
-if skill_category_choice in skill_categories_elements:
-    valid_skill_category_choice = True
-    if valid_skill_category_choice == skill_categories_elements[0]:
-        current_skill_category = sword
-    elif valid_skill_category_choice == skill_categories_elements[1]:
-        current_skill_category == lance
-    elif valid_skill_category_choice == skill_categories_elements[2]:
-        current_skill_category == axe
-    elif valid_skill_category_choice == skill_categories_elements[3]:
-        current_skill_category == bow
-    elif valid_skill_category_choice == skill_categories_elements[4]:
-        current_skill_category == brawl
-    elif valid_skill_category_choice == skill_categories_elements[5]:
-        current_skill_category == reason
-    elif valid_skill_category_choice == skill_categories_elements[6]:
-        current_skill_category == faith
-    elif valid_skill_category_choice == skill_categories_elements[7]:
-        current_skill_category == authority
-    elif valid_skill_category_choice == skill_categories_elements[8]:
-        current_skill_category == heavy_armor
-    elif valid_skill_category_choice == skill_categories_elements[9]:
-        current_skill_category == riding
-    elif valid_skill_category_choice == skill_categories_elements[9]:
-        current_skill_category ==  flying
-else:
-    valid_skill_category_choice = False
-    print("You did not enter the correct number")
+while True:
+    # Display the list of skill categories
+    print("List of Skill Categories: ")
+    print("------------------------------------------------")
+    for category_index, skill_category in enumerate(GradeCalculator.skill_categories,start=1):
+        print(f"{category_index}. {skill_category}")
 
-# Get the number of EXP for that skill category
-total_exp_input = int(input(f"Please enter your current number of total EXP for {current_skill_category.skill_category}: "))
-if total_exp_input > 0:
-    valid_total_exp_input = True
-else:
-    valid_total_exp_input = False
+    # Let the user choose what skill category they want to calculate for 
+    skill_category_choice = int(input("\nPlease enter a skill category to upgrade (1-11): ").strip())
+    if skill_category_choice in skill_categories_elements:
+        valid_skill_category_choice = True
+        # Set the skill category to Sword
+        if skill_category_choice == skill_categories_elements[0]:
+            current_skill_category = sword
+        # Set the skill category to Lance
+        elif skill_category_choice == skill_categories_elements[1]:
+            current_skill_category = lance
+        # Set the skill category to Axe
+        elif skill_category_choice == skill_categories_elements[2]:
+            current_skill_category = axe
+        # Set the skill category to Bow
+        elif skill_category_choice == skill_categories_elements[3]:
+            current_skill_category = bow
+        # Set the skill category to Brawl
+        elif skill_category_choice == skill_categories_elements[4]:
+            current_skill_category = brawl
+        # Set the skill category to Reason
+        elif skill_category_choice == skill_categories_elements[5]:
+            current_skill_category = reason
+        # Set the skill category to Faith
+        elif skill_category_choice == skill_categories_elements[6]:
+            current_skill_category = faith
+        # Set the skill category to Authority
+        elif skill_category_choice == skill_categories_elements[7]:
+            current_skill_category = authority
+        # Set the skill category to Heavy Armor
+        elif skill_category_choice == skill_categories_elements[8]:
+            current_skill_category = heavy_armor
+        # Set the skill category to Riding
+        elif skill_category_choice == skill_categories_elements[9]:
+            current_skill_category = riding
+        # Set the skill category to Flying
+        elif skill_category_choice == skill_categories_elements[10]:
+            current_skill_category = flying
+    else:
+        valid_skill_category_choice = False
+        print("You did not enter the correct number")
 
-# Display the list of letter grades to the user 
-print("\nList of letter grades:")
-print("------------------------------------------------")
-for letter in GradeCalculator.letter_grades:
-    print(letter)
+    # Get the number of EXP for that skill category
+    total_exp_input = int(input(f"Please enter your current number of total EXP for {current_skill_category.skill_category}: "))
+    if total_exp_input > 0:
+        valid_total_exp_input = True
+    else:
+        valid_total_exp_input = False
 
+    # Display the list of letter grades to the user 
+    print("\nList of letter grades to upgrade to:")
+    print("------------------------------------------------")
+    for letter in GradeCalculator.letter_grades[1:12]:
+        print(letter)
 
-#for calculation in calculations:
-    #result = calculation()
+    #for calculation in calculations:
+        #result = calculation()
 
-# Get the letter grade from the user
-letter_grade_input = input("Please enter a letter grade to calculate up to (E+ - MAX): ")
-if letter_grade_input in GradeCalculator.letter_grades:
-    valid_letter_grade_input = True
-    if letter_grade_input == GradeCalculator.letter_grades[0]:
-        current_skill_category.calculate_to_E_plus(total_exp_input)
-    elif letter_grade_input == GradeCalculator.letter_grades[1]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[2]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[3]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[4]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[5]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[6]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[7]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[8]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[9]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[10]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[11]:
-        pass
-    elif letter_grade_input == GradeCalculator.letter_grades[12]:
-        pass
-else:
-    valid_letter_grade_input = False
-    print("You did not enter a valid letter grdae.")
+    # There should be the option to calculate one at a time and also all at a time
+    # (Like if the user goes up to A+, it starts from E+ all tehe way up there)
+    # For now, do one at a time
 
+    # The up to version will use a for loop to loop through functions.
+    # the regular version will just call individual indexes
 
+    # Get the letter grade from the user
 
+    letter_grade_input = input("Please enter a letter grade to calculate up to (E+ - MAX): ")
+    if letter_grade_input in GradeCalculator.letter_grades:
+        valid_letter_grade_input = True
+        display_skill_category_info()
 
+        index = GradeCalculator.letter_grades.index(letter_grade_input)
+        exp = total_exp_input
+
+        for x in range(index):
+            result = calculations[x](current_skill_category, exp)
+            if result:
+                _, exp = result 
+    else:
+        valid_letter_grade_input = False
+        print("You did not enter a valid letter grdae.")
+    
+    loop_choice = input("Would you like to try again? ").lower().strip()
+    if loop_choice != "y":
+        break
 
     
 
