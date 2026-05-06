@@ -645,7 +645,7 @@ while True:
     # Display the list of letter grades to the user 
     print("\nList of letter grades to upgrade to:")
     print("------------------------------------------------")
-    for letter in GradeCalculator.letter_grades[1:12]:
+    for letter in GradeCalculator.letter_grades[1:13]:
         print(letter)
 
     #for calculation in calculations:
