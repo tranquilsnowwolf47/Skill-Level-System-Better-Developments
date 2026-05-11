@@ -7,19 +7,24 @@ class LanceSkills:
     S_plus_skills = (
 "Pro Artist",
 "Character Design + 5",
-"Fight Scenes + 5")
+"Fight Scenes + 5",
+"Drawing Speed + 5", 
+"Wig Styling + 5" 
+)
 
     S_skills = (
 "Piano Master",
 "Anatomy Master",
 "Mangaka",
-"Action Poses + 5")
+"Action Poses + 5",
+"Wig Styling + 4")
 
     A_plus_skills = (
 "Proportions Master",
 "Full Body + 3",
 "Fable Teller",
 "Poses + 3",
+"Drawing Speed + 4",
 "Clothing Design Lvl 3")
 
     A_skills = (
@@ -31,7 +36,9 @@ class LanceSkills:
 "Story Telling + 2",
 "Action Poses + 4",
 "Fight Scenes + 4",
-"Lance Prowess Lvl. 5")
+"Wig Styling + 3",
+"Lance Prowess Lvl. 5",
+)
 
     B_plus_skills = (
 "Art + 3",
@@ -47,7 +54,7 @@ class LanceSkills:
 "Art + 2",
 "Poses + 2",
 "Body Proportions + 2",
-"Full body + 1",
+"Full body Lvl 1",
 "Action Poses + 3",
 "Fight Scenes + 2",
 "Clothing Design Lvl 2",
