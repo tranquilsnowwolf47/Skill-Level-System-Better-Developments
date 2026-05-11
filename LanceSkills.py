@@ -54,10 +54,11 @@ class LanceSkills:
 "Art + 2",
 "Poses + 2",
 "Body Proportions + 2",
-"Full body Lvl 1",
+"Full Body Lvl 1",
 "Action Poses + 3",
 "Fight Scenes + 2",
 "Clothing Design Lvl 2",
+"Wig Styling + 2",
 "Lance Prowess Lvl. 4")
 
     C_plus_skills = (
@@ -65,6 +66,7 @@ class LanceSkills:
 "Action Poses + 2",
 "Anatomy + 1",
 "Fight scenes + 1",
+"Drawing Speed + 2",
 "Lance Prowess Lvl. 3")
 
     C_skills = (
@@ -75,13 +77,15 @@ class LanceSkills:
 
     D_plus_skills = (
 "Apprentice Lyricist",
-"Poses + 1")
+"Poses + 1",
+"Wig Styling +1")
 
     D_skills = (
 "Lance Prowess Lvl. 2",
-"Art + 1")
+"Art + 1",
+"Drawing Speed + 1")
 
-    E_plus_skills = ("Lance Prowess Lvl. 1")
+    E_plus_skills = ("Lance Prowess Lvl. 1",)
 
 skill_category = "Lance (The Arts)"
 
@@ -90,7 +94,8 @@ def display_e_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("E+:")
-    print(LanceSkills.E_plus_skills)
+    for skill in LanceSkills.E_plus_skills:
+        print(skill)
 
 # Displays the full list of D skills
 def display_d_skills(show_header=False):
