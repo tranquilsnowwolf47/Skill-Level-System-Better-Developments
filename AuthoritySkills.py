@@ -19,7 +19,8 @@ class AuthoritySkills:
 "Self-promotion + 5",
 "Marketing + 5",
 "Boundary Enforcement + 5",
-"Content Creation + 5"
+"Content Creation + 5",
+"Hair Styling + 5"
 )
     
     S_skills = (
@@ -56,6 +57,7 @@ class AuthoritySkills:
 "Fashion Lv 3",
 "Self-Haircut + 4",
 "Boundary Enforcement + 3",
+"Hair Styling + 4", 
 "Authority Prowess Lvl. 5"
 )
     
@@ -93,7 +95,8 @@ class AuthoritySkills:
 "Fashion Lvl 2",
 "Masculinity + 2",
 "Boundary Enforcement + 2",
-"Fragrance Application + 3 "
+"Fragrance Application + 3",
+"Hair Styling + 3" 
 )
     
     C_plus_skills = (
@@ -103,7 +106,8 @@ class AuthoritySkills:
 "Self-Haircut + 2",
 "Boundary Enforcement + 1",
 "Authority Prowess Lvl. 3",
-"Content Creation + 2"
+"Content Creation + 2",
+"Hair Styling + 2" 
 )
     
     C_skills = (
@@ -121,8 +125,8 @@ class AuthoritySkills:
 "Moisturizing + 2",
 "Looksmaxing Lvl 1",
 "Cold Approach + 1",
-"Authority Prowess Lvl. 2",
-"Content Creation + 1"
+"Content Creation + 1",
+"Authority Prowess Lvl. 2"
 )
     
     D_skills = (
@@ -134,7 +138,8 @@ class AuthoritySkills:
 "Self-Haircut + 1",
 "Self-promotion + 1",
 "Marketing + 1",
-"Fragrance Application + 1"
+"Fragrance Application + 1",
+"Hair Styling + 1"
 )
     
     E_plus_skills = (
