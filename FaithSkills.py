@@ -35,7 +35,7 @@ class FaithSkills:
 "1 Peter | Requirement: Complete the book of 1 Peter",
 "2 Peter | Requirement: Complete the book of 2 Peter",
 "1 John | Requirement: Complete the book of 1 John",
-"2 John | Requirement: Complete the book of 2 John",,
+"2 John | Requirement: Complete the book of 2 John",
 "3 John | Requirement: Complete the book of 3 John",
 "Jude | Requirement: Complete the book of Jude",
 "Revelation | Requirement: Complete the book of Revelation"
