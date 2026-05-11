@@ -26,7 +26,8 @@ class BrawlSkills:
 "Gun Draw Speed Lvl 3",
 "Bladed Weapons + 5",
 "Combinations + 5",
-"Forms + 5"
+"Forms + 5",
+"Spinal Rotation + 5"
 )
     
     S_skills = (
@@ -58,7 +59,8 @@ class BrawlSkills:
 "Forms + 4",
 "Combat Lvl 3",
 "Control + 5",
-"Yolk + 5"
+"Yolk + 5",
+"Spinal Rotation + 4"
 )
     
     A_plus_skills = (
@@ -116,6 +118,7 @@ class BrawlSkills:
 "Auto-Block Lvl 2",
 "Ground Recovery Lvl 2",
 "Bladed Weapons + 2",
+"Spinal Rotation + 3",
 "Brawling Prowess Lvl. 4"
 )
     
@@ -174,7 +177,8 @@ class BrawlSkills:
 "Combinations + 1",
 "Brawling Prowess Lvl. 3",
 "Crane Style + 2",
-"Range Gauging Lvl. 1"
+"Range Gauging Lvl. 1",
+"Spinal Rotation + 2"
 )
     
     C_skills = (
@@ -213,7 +217,8 @@ class BrawlSkills:
 "Horse Stance + 2",
 "Brawling Prowess Lvl. 2",
 "Control + 1",
-"Yolk + 2"
+"Yolk + 2",
+"Spinal Rotation + 1"
 )
     
     D_skills = (
