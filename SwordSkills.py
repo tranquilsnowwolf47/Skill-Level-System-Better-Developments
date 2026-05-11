@@ -14,7 +14,9 @@ class SwordSkills:
 "Saving + 5",
 "Financial Discipline + 5",
 "Financial Literacy + 5",
-"Transaction Tracking + 5")
+"Transaction Tracking + 5",
+"ADHD Optimization + 5",
+"Gamified System Optimization + 5")
     
     S_skills = (
 "Baron",
@@ -24,13 +26,16 @@ class SwordSkills:
 "Investing + 4",
 "Financial Discipline + 4",
 "Grocery Shopping + 5",
-)
+"ADHD Optimization + 4",
+"Sticky Note Use + 5")
     
     A_plus_skills = (
 "Master Planner", 
 "Financial IQ + 40",
 "Saving + 4",
-"Budgeting + 4")
+"Budgeting + 4",
+"Stat Logging Lvl 3",
+"Gamified System Optimization + 4")
     
     A_skills = (
 "Financially Literate", 
@@ -42,8 +47,9 @@ class SwordSkills:
 "Financial Discipline + 3",
 "Financial Literacy + 4",
 "Transaction Tracking + 4", 
-"Sword Prowess Lvl. 5" 
-)
+"ADHD Optimization + 3",
+"Sticky Note Use + 4",
+"Sword Prowess Lvl. 5" )
 
     B_plus_skills = (
 "Time Manager", 
@@ -52,8 +58,9 @@ class SwordSkills:
 "Saving + 3",
 "Financial Literacy + 3",
 "Sword Prowess Lvl. 4",  
-"Budgeting + 3"
-)
+"Budgeting + 3",
+"Gamified System Optimization + 3")
+    
     B_skills = (
 "Good Credit Score",
 "Good Spender",  
@@ -63,7 +70,9 @@ class SwordSkills:
 "Grocery Shopping + 4",
 "Financial Literacy + 2",
 "Financial Discipline + 2",
-"Transaction Tracking + 3"
+"Transaction Tracking + 3",
+"Sticky Note Use + 3",
+"Stat Logging Lvl 2"
 )
     C_plus_skills = (
 "Budgeter",
@@ -72,7 +81,9 @@ class SwordSkills:
 "Transaction Tracking + 2",
 "Grocery Shopping + 3",
 "Sword Prowess Lvl. 3",
-"Budgeting + 2"
+"Budgeting + 2",
+"ADHD Optimization + 2",
+"Gamified System Optimization + 2"
 )
     C_skills = (
 "Novice Planner", 
@@ -82,18 +93,24 @@ class SwordSkills:
 "Financial Literacy + 1",
 "Saving + 2",
 "Financial Discipline + 1",
+"Sticky Note Use + 2",
 "Sword Prowess Lvl. 2" 
 )
     D_plus_skills = (
 "Grocery Shopping + 2",
-"Average Spender" 
+"Average Spender",
+"ADHD Optimization + 1",
+"Gamified System Optimization + 1",
+"Sword Prowess Lvl. 2 ",
 )
     D_skills = (
 "Budgeting + 1",
 "Saving + 1",
 "Sword Prowess Lvl. 1" 
 )
-    E_plus_skills = ("Grocery Shopping + 1")
+    E_plus_skills = (
+"Sticky Note Use + 1",
+"Grocery Shopping + 1")
 
 skill_category = "Sword (Essentials)"
 
@@ -102,7 +119,8 @@ def display_e_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("E+:")
-    print(SwordSkills.E_plus_skills)
+    for skill in SwordSkills.E_plus_skills:
+        print(skill)
 
 # Displays the full list of D skills
 def display_d_skills(show_header=False):
