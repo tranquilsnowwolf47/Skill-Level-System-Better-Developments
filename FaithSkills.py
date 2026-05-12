@@ -125,7 +125,7 @@ class FaithSkills:
 "Risk Taking + 1",
 "Bible Knowledge + 1",
 "1 Kings | Requirement: Complete the book of 1 Kings",
-"Kings | Requirement: Complete the book of 2 Kings",
+"2 Kings | Requirement: Complete the book of 2 Kings",
 "1 Chronicles  | Requirement: Complete the book of 1 Chronicles",
 "2 Chronicles  | Requirement: Complete the book of 2 Chronicles",
 "Ezra | Requirement: Complete the book of Ezra",
@@ -136,11 +136,12 @@ class FaithSkills:
 "Luck + 1",
 "Karma + 2",
 "Bible Reading Lvl 1",
-"Faith Prowess Lvl. 2",
 "Judges | Requirement: Complete the book of Judges",
 "Ruth | Requirement: Complete the book of Ruth",
 "1 Samuel | Requirement: Complete the book of 1 Samuel", 
-"2 Samuel | Requirement: Complete the book of 2 Samuel"
+"2 Samuel | Requirement: Complete the book of 2 Samuel",
+"Faith Prowess Lvl. 2"
+
 )
     
     D_skills = (
