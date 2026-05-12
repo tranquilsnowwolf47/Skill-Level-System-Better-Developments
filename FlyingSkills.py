@@ -9,7 +9,8 @@ class FlyingSkills:
     "Physical Organization + 5",
     "Digital Organization + 5",
     "Dish Washing + 5",
-    "Cleanliness + 5"
+    "Cleanliness + 5",
+    "Photo Organization + 5"
 )
     
     S_skills = (
@@ -21,33 +22,53 @@ class FlyingSkills:
     "Sweeping + 5",
     "Dish Washing + 4",
     "Cleanliness + 4"
+    "Photo Organization + 4",
+    "Doc Organization + 5",
+    "Video Organization + 5"
     )
     
     A_plus_skills = (
     "Maid",
     "Computer File Administrator",
     "Dish Washing + 3",
-    "Sweeping + 4"
+    "Sweeping + 4",
+    "Sticky Note Organization + 5"
     )
     
     A_skills = (
     "Cleanliness + 3",
     "Physical Organization + 3",
-    "Digital Organization + 3"
+    "Digital Organization + 3",
+    "Photo Organization + 3", 
+    "Vacuuming + 5",
+    "Doc Organization + 4",
+    "Sticky Note Organization + 4",
+    "Video Organization + 4"
     )
     
-    B_plus_skills = ("Sweeping + 3")
+    B_plus_skills = ("Sweeping + 3",)
 
     B_skills = (
+    "Vacuuming + 4",
     "Physical Organization + 2",
-    "Digital Organization + 2"
+    "Digital Organization + 2",
+    "Doc Organization + 3",
+    "Sticky Note Organization + 3",
+    "Video Organization + 3"
     )
     
-    C_plus_skills = ("Cleanliness + 2")
+    C_plus_skills = ("Cleanliness + 2",
+                    "File Backup",  
+                    "Photo Organization + 2"
+)
 
     C_skills = (
-    "Sweeping + 2",
-    "Dish Washing + 2"
+    "Vacuuming + 3",
+    "Sweeping + 2", 
+    "Dish Washing + 2", 
+    "Doc Organization + 2", 
+    "Sticky Note Organization + 2",
+    "Video Organization + 2"
     )
 
     D_plus_skills = (
@@ -56,11 +77,17 @@ class FlyingSkills:
     )
 
     D_skills = (
+    "Vacuuming + 2"
     "Dish Washing + 1",
-    "Cleanliness + 1"
+    "Cleanliness + 1",
+    "Photo Organization + 1",
+    "Doc Organization + 1",
+    "Sticky Note Organization + 1",
+    "Video Organization + 1"
     )
 
-    E_plus_skills = ("Sweeping + 1")
+    E_plus_skills = ("Vacuuming + 1",
+                     "Sweeping + 1")
 
 skill_category = "Flying (Organizational)"
 
@@ -68,8 +95,8 @@ skill_category = "Flying (Organizational)"
 def display_e_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
-    print("E+:")
-    print(FlyingSkills.E_plus_skills)
+    for skill in FlyingSkills.E_plus_skills:
+        print(skill)
 
 # Displays the full list of D skills
 def display_d_skills(show_header=False):
@@ -100,7 +127,8 @@ def display_c_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("C+:")
-    print(FlyingSkills.C_plus_skills)
+    for skill in FlyingSkills.C_plus_skills:
+        print(skill)
 
 # Displays the full list of B skills
 def display_b_skills(show_header=False):
@@ -115,7 +143,8 @@ def display_b_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("B+:")
-    print(FlyingSkills.B_plus_skills)
+    for skill in FlyingSkills.B_plus_skills:
+        print(skill)
 
 # Displays the full list of A skills
 def display_a_skills(show_header=False):
