@@ -10,7 +10,8 @@ class HvyArmorSkills:
 "Self-control + 5",
 "Grit + 5",
 "Courage + 5",
-"Discipline + 5"
+"Discipline + 5",
+"Rejection Tolerance + 5"
 )
     
     S_skills = (
@@ -27,7 +28,8 @@ class HvyArmorSkills:
     A_plus_skills = (
 "Focused Mind",
 "Grit + 3", 
-"Flexibility + 2" 
+"Flexibility + 2",
+"Rejection Tolerance + 4" 
 )
     
     A_skills = (
@@ -37,7 +39,8 @@ class HvyArmorSkills:
 "Self-control + 3",
 "Grit + 3",
 "Super Armor Lvl 2",
-"Courage + 3"
+"Courage + 3",
+"Rejection Tolerance + 3"
 )
     
     B_plus_skills = (
@@ -50,7 +53,8 @@ class HvyArmorSkills:
 "Grit + 2", 
 "Self-control + 2",
 "Super Armor Lvl 1",
-"Courage + 2"
+"Courage + 2",
+"Rejection Tolerance + 2" 
 )
     
     C_plus_skills = (
@@ -66,13 +70,15 @@ class HvyArmorSkills:
 "Discipline + 2"
 )
     
-    D_plus_skills = ("Grit + 1")
+    D_plus_skills = ("Grit + 1",)
 
     D_skills = (
 "Pain Tolerance + 1", 
-"Discipline + 1"
+"Discipline + 1",
+"Rejection Tolerance + 1" 
+
 )
-    E_plus_skills = ("Resistance + 1")
+    E_plus_skills = ("Resistance + 1",)
 
 skill_category = "Heavy Armor (Grit and Guts)"
 
@@ -81,8 +87,9 @@ def display_e_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("E+:")
-    print(HvyArmorSkills.E_plus_skills)
-
+    for skill in HvyArmorSkills.E_plus_skills:
+        print(skill)
+        
 # Displays the full list of D skills
 def display_d_skills(show_header=False):
     if show_header:
@@ -96,7 +103,8 @@ def display_d_plus_skills(show_header=False):
     if show_header:
         print(f"{skill_category} skills:")
     print("D+:")
-    print(HvyArmorSkills.D_plus_skills)
+    for skill in HvyArmorSkills.D_plus_skills:
+        print(skill)
 
 # Displays the full list of C skills
 def display_c_skills(show_header=False):
