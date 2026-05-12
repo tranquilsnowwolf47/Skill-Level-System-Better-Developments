@@ -11,7 +11,8 @@ class RidingSkills:
     "Breakdancing + 3", 
     "Highway Driving + 5",
     "Lane Switching + 5",
-    "Fitness Education + 5"
+    "Fitness Education + 5",
+    "Eating + 5"
 )
     S_skills = (
     "Fast as Wind", 
@@ -33,7 +34,8 @@ class RidingSkills:
     "Gym Rat", 
     "Cooking + 4",
     "Fitness Education + 4",
-    "Sit Ups + 4"
+    "Sit Ups + 4",
+    "Eating + 4"
 )
     A_skills = (
     "Rock Solid-Hero",
@@ -57,7 +59,8 @@ class RidingSkills:
     "Balance + 2", 
     "Consistent Exercise + 2",
     "Driving + 3",
-    "Cooking + 3"
+    "Cooking + 3",
+    "Eating + 3" 
     )
 
     B_skills = (
@@ -82,7 +85,8 @@ class RidingSkills:
     "Parking + 2",
     "Fitness Education + 2",
     "Jumping Jacks + 3",
-    "Push Ups + 2"
+    "Push Ups + 2",
+    "Eating + 2"
 )
     C_skills = (
     "Balance + 1",
@@ -105,6 +109,7 @@ class RidingSkills:
     D_skills = (
     "Speed + 5", 
     "Footwork + 1", 
+    "Eating + 1", 
     "Eating Habits Lvl 1"
 )
     E_plus_skills = (
